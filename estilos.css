@@ -1,0 +1,811 @@
+/*MOBILE FIRST*/
+
+/*SMARTPHONE*/
+@media (max-width:479px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /*Elementos del header Smartphone (Aplica para todas las páginas del sitio)*/
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: #3498DB;
+        min-width: 100vw;
+        margin: 5px;
+    }
+
+    nav{
+        padding: 30px;
+        background-color: #3498DB;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:space-evenly;
+        align-content: center;
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .span{
+        background-color: palevioletred;
+        opacity: 0.4;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    span:hover{
+        opacity: 0.4;
+    }
+
+    .titulo_header{
+        font-size: 20px;
+        text-align: center;
+    }
+    .logo_header{
+        max-width: 60px;
+    }
+
+    /*Elementos del main index smartphone*/
+    .div1_index{
+        background-color: plum;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .imagen_div1{
+        max-width: 95vw;
+    }
+
+    .letras_div1_index{
+        font-size: 12px;
+    }
+
+    .div2_index{
+        background-color: aquamarine;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .foto_tour{
+        max-width: 95vw;
+        min-height: 28vh;
+    }
+
+    .div3_index{
+        background-color: #3098DB;
+        margin: 5px;
+    }
+
+    .logo_index_div3{
+        min-width: 80px;
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .texto_div3{
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        color: firebrick;
+    }
+
+    .img_div3{
+        max-width: 40px;
+    }
+
+    .div4_index{
+        background-color: wheat;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .video_div4{
+        min-width: 90vw;
+        min-height: 25vh;
+    }
+
+    /*Los dos siguientes corresponden al div5*/
+    article{
+        max-width: 90vw;
+        text-align: center;
+    }
+
+    .img_estrellazul{
+        max-width: 55px;
+    }
+
+    /*Elementos del main de oferta smartphone*/
+    .logo_oferta_div2{
+        max-width: 50px;
+    }
+
+    .ofertaImg{
+        max-width: 260px;
+        max-height: 420px;
+    }
+
+    .div1_oferta{
+        background-color: beige;
+        text-align: center;
+        margin: 5px;
+    }
+
+    #letras_div1_of1{
+        font-size: 10px;
+        color: red;
+    }
+
+    #letras_div1_of2{
+        font-size: 20px;
+        color: #1C94E5;
+    }
+
+    .div2_oferta{
+        background-color: greenyellow;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div3_oferta{
+        background-color: peru;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .caja1, .caja2, .caja3{
+        font-size: 12px;
+    }
+
+    .div4_oferta{
+        background-color: lightcoral;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div5_oferta{
+        background-color: lightgreen;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div6_oferta{
+        background-color: rosybrown;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div7_oferta{
+        background-color: orchid;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div8_oferta{
+        background-color: wheat;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div9_oferta{
+        background-color: honeydew;
+        text-align: center;
+        margin: 5px;
+    }
+
+    /*Elementos del main plantel Smartphone*/
+    .div1_plantel{
+        background-color: antiquewhite;
+        font-size: 25px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .fotolab{
+        max-width: 120px;
+    }
+
+    .fotoaulas{
+        max-width: 200px;
+    }
+
+    .fotoprac{
+        max-width: 200px;
+    }
+
+    .fotorecon{
+        max-width: 250px;
+    }
+
+    .fotoegr{
+        max-width: 120px;
+    }
+
+    .fotoper{
+        max-width: 120px;
+    }
+
+    .div2_plantel{
+        background-color: lightblue;
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div3_plantel{
+        background-color: lightsalmon;
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div4_plantel{
+        background-color: lightgreen;
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div5_plantel{
+        background-color: thistle;
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div6_plantel{
+        background-color: khaki;
+        font-size: 12px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .titulos_plantel{
+        color: #3498DB;
+        font-size: 22px;
+    }
+
+    .info_seccion{
+        color: black;
+        font-size: 12px;
+    }
+
+    /*Elementos del main de beca smartphone*/
+    .formBeca{
+        padding: 10px;
+        margin: 10px;
+        font-size: 10px;
+    }
+
+    .textAreaBeca{
+        max-width: 80vw;
+    }
+
+    /*Elementos del contacto smartphone*/
+    iframe{
+        min-width: 100vw;
+        min-height: 50vh;
+        margin: 5px;
+    }
+
+    .dirContacto{
+        color: #1C94E5;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .contactoMapa{
+        background-color: lightgreen;
+        color: #1C94E5;
+        margin: 5px;
+    }
+
+    .cajasContacto{
+        background-color: lightblue;
+        color: #1C94E5;
+        justify-content: space-between;
+        font-size: 12px; 
+        margin: 5px;
+    }
+
+    /*Elementos del footer smartphone (Aplca para todas las páginas del sitio)*/
+    footer{
+        background-color: aliceblue;
+        text-align: center;
+        min-width: 100vw;
+        margin: 5px;
+    }
+
+    .imagen_footer{
+        max-width: 160px;
+    }
+
+    .letras_footer{
+        font-size: 15px;
+    }
+
+    /*Adaptaciones de las clases 6 (GRID 1) y 7 (GRID 2):*/
+
+    /*grid para index*/
+    .grid_index{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 54vh 112vh 130vh 35vh 120vh;
+    }
+
+    /*grid para oferta*/
+    .grid_oferta{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 60vh 100vh 100vh 100vh 100vh 50vh 100vh 50vh 120vh;
+    }
+
+    /*grid para plantel*/
+    .grid_plantel{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 120vh 100vh 100vh 100vh 100vh 100vh;
+    }
+
+    /*grid para contacto*/
+    .grid_contacto{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 70vh 30vh;
+    }
+
+    .div5_index{
+        display: grid;
+        background-color: aqua;
+        text-align: center;
+        grid-template-areas: 
+        /*2 columnas y 3 filas*/
+        "a b" /*Fila 1*/
+        "l m" /*Fila 2*/
+        "e e" /*Fila 3*/
+        ;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 30vh;
+        grid-column-gap: 3px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #años{
+        grid-area: a;
+    }
+
+    #bachilleratos{
+        grid-area: b;
+    }
+
+    #licenciaturas{
+        grid-area: l;
+    }
+
+    #maestrias{
+        grid-area: m;
+    }
+
+    #egresados{
+        grid-area: e;
+        justify-content: center;
+    }
+}
+
+/*Tablet*/
+@media(min-width:480px) and (max-width:1023px){
+    
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: #3498DB;
+        min-width: 100vw;
+    }
+    .titulo_header{
+        font-size: 20px;
+        text-align: center;
+    }
+    .logo_header{
+        max-width: 100px;
+    }
+    
+    body{
+        background-color: orange;
+    }
+}
+
+/*DESKTOP*/
+@media (min-width:1024px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    /*Elementos del header Desktop (Aplica para todas las páginas del sitio)*/
+    header{
+        display: flex;
+        flex-flow: column nowrap;
+        background-color: #3498DB;
+        min-width: 100vw;
+        margin: 5px;
+    }
+    nav{
+        font-size: 20px;
+        padding: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-evenly;
+        align-content: center;
+    
+    }
+    .titulo_header{
+        font-size: 30px;
+        text-align: center;
+    }
+    .logo_header{
+        max-width: 100px;
+    }
+
+    /*Elementos del main de index Desktop*/
+    .div1_index{
+        background-color: plum;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .imagen_div1{
+        max-width: 95vw;
+    }
+
+    .div2_index{
+        background-color: aquamarine;
+        display: flex;
+        margin: 5px;
+    }
+
+    .foto_tour{
+        max-height: 20vh;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    .div3_index{
+        background-color: #3498DB;
+        margin: 5px;
+    }
+
+    .logo_index_div3{
+        min-width: 120px;
+        max-width: 140px;
+        margin: 5px;
+    }
+    .texto_div3{
+        font-size: 30px;
+        text-align: center;
+        color:firebrick;
+        margin-top: 5px;
+    }
+
+    .img_div3{
+        max-width: 40px;
+    }
+
+    .seccion_miviva_index{
+        display: flex;
+    }
+
+    .div4_index{
+        background-color: wheat;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .video_div4{
+        min-width: 95vw;
+        min-height: 85vh;
+        margin: 5px;
+    }
+
+    /*Los dos siguientes corresponden al div5*/
+    article{
+        max-width: 50vw;
+        text-align: center;
+    }
+
+    .article1, .article2, .article3{
+        width: 30vw;
+        padding: 10px;      /*Para espacios laterales*/
+    }
+
+    .img_estrellazul{
+        max-width: 80px;
+    }
+
+    /*Elementos del main de oferta Desktop*/
+    
+    .logo_oferta_div2{
+        max-width: 150px;
+    }
+
+    .ofertaImg{
+        max-width: 320px;
+        max-height: 400px;
+    }
+
+    .div1_oferta{
+        background-color: beige;
+        text-align: center;
+        margin: 5px;
+    }
+
+    #letras_div1_of2{
+        font-size: 50px;
+        color: #1C94E5;
+    }
+
+    #letras_div1_of1{
+        font-size: 20px;
+        color: red;
+    }
+
+    .div2_oferta{
+        background-color: greenyellow;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .caja1 .caja2 .caja3{
+        font-size: 16px;
+    }
+
+    .div3_oferta{
+        background-color: peru;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div4_oferta{
+        background-color: lightcoral;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div5_oferta{
+        background-color: lightgreen;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div6_oferta{
+        background-color: rosybrown;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div7_oferta{
+        background-color: orchid;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div8_oferta{
+        background-color: wheat;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div9_oferta{
+        background-color: honeydew;
+        text-align: center;
+        margin: 5px;
+    }
+
+    /*Elementos del main plantel Desktop*/
+    .div1_plantel{
+        background-color: antiquewhite;
+        font-size: 25px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .fotolab{
+        max-width: 320px;
+    }
+
+    .fotoaulas{
+        max-width: 400px;
+    }
+
+    .fotoprac{
+        max-width: 400px;
+    }
+
+    .fotorecon{
+        max-width: 550px;
+    }
+
+    .fotoegr{
+        max-width: 320px;
+    }
+
+    .fotoper{
+        max-width: 320px;
+    }
+
+    .div2_plantel{
+        background-color: lightblue;
+        font-size: 25px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div3_plantel{
+        background-color: lightsalmon;
+        font-size: 25px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div4_plantel{
+        background-color: lightgreen;
+        font-size: 25px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div5_plantel{
+        background-color: thistle;
+        font-size: 25px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .div6_plantel{
+        background-color: khaki;
+        font-size: 25px;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .titulos_plantel{
+        color: #3498DB;
+        font-size: 38px;
+    }
+
+    .info_seccion{
+        color: black;
+        font-size: 18px;
+    }
+
+    /*Elementos del main de beca Desktop*/
+    .formBeca{
+        padding: 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .textAreaBeca{
+        max-width: 80vw;
+    }
+
+    .botonBeca{
+        font-size: 16px;
+    }
+
+    /*Elementos del contacto Desktop*/
+    iframe{
+        min-width: 100vw;
+        min-height: 50vh;
+        margin: 5px;
+    }
+
+    .dirContacto{
+        color: #1C94E5;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .contactoMapa{
+        background-color: lightgreen;
+        color: #1C94E5;
+        margin: 5px;
+    }
+
+    .cajasContacto{
+        background-color: lightblue;
+        color: #1C94E5;
+        font-size: 16px;
+        margin: 5px; 
+    }
+
+
+
+    /*Adaptaciones de las clases 6 (GRID 1) y 7 (GRID 2):*/
+    /*grid para index*/
+    .grid_index{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 100vh 30vh 100vh 100vh 35vh;
+    }
+
+    .div5_index{
+        display: grid;
+        background-color: aqua;
+        text-align: center;
+        grid-template-areas: 
+        /*5 columnas y 1 fila*/
+        "a b l m e" /*Fila 1*/
+        ;
+        grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+        grid-template-rows: 30vh;
+        grid-column-gap: 10px;
+        padding: 10px;
+        margin: 1px;
+    }
+
+     /*grid para oferta*/
+     .grid_oferta{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 80vh 80vh 80vh 100vh 100vh 50vh 100vh 50vh 100vh;
+    }
+
+     /*grid para plantel*/
+    .grid_plantel{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 120vh 100vh 100vh 100vh 100vh 100vh;
+    }
+
+    /*grid para contacto*/
+    .grid_contacto{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 70vh 30vh;
+    }
+
+    /*Los siguientes elementos son para gird-areas*/
+    #años{
+        grid-area: a;
+    }
+
+    #bachilleratos{
+        grid-area: b;
+    }
+
+    #licenciaturas{
+        grid-area: l;
+    }
+
+    #maestrias{
+        grid-area: m;
+    }
+
+    #egresados{
+        grid-area: e;
+        justify-content: center;
+    }
+
+    /*Elementos del footer Desktop (Aplica para todas las páginas del sitio)*/
+    footer{
+        background-color: aliceblue;
+        text-align: center;
+        min-width: 100vw;
+        margin: 5px;
+    }
+
+    .imagen_footer{
+        max-width: 320px;
+    }
+
+}
