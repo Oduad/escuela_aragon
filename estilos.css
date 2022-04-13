@@ -46,13 +46,16 @@
     }
     .logo_header{
         max-width: 60px;
+        filter: brightness(0.1);
+        mix-blend-mode: multiply;
     }
 
     /*Elementos del main index smartphone*/
-    .div1_index{
+    .div_uno_index{
         background-color: plum;
         text-align: center;
         margin: 5px;
+        background-image: radial-gradient(pink,lightblue);
     }
 
     .imagen_div1{
@@ -63,7 +66,7 @@
         font-size: 12px;
     }
 
-    .div2_index{
+    .div_dos_index{
         background-color: aquamarine;
         text-align: center;
         margin: 5px;
@@ -74,7 +77,7 @@
         min-height: 28vh;
     }
 
-    .div3_index{
+    .div_tres_index{
         background-color: #3098DB;
         margin: 5px;
     }
@@ -98,7 +101,7 @@
         max-width: 40px;
     }
 
-    .div4_index{
+    .div_cuatro_index{
         background-color: wheat;
         margin: 5px;
         text-align: center;
@@ -359,7 +362,7 @@
         grid-template-rows: 70vh 30vh;
     }
 
-    .div5_index{
+    .div_cinco_index{
         display: grid;
         background-color: aqua;
         text-align: center;
@@ -422,20 +425,17 @@
 
 /*DESKTOP*/
 @media (min-width:1024px) {
-
     *{
         margin: 0;
         padding: 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-
     /*Elementos del header Desktop (Aplica para todas las páginas del sitio)*/
     header{
         display: flex;
         flex-flow: column nowrap;
         background-color: #3498DB;
         min-width: 100vw;
-        margin: 5px;
     }
     nav{
         font-size: 20px;
@@ -444,7 +444,6 @@
         flex-flow: row wrap;
         justify-content:space-evenly;
         align-content: center;
-    
     }
     .titulo_header{
         font-size: 30px;
@@ -453,37 +452,56 @@
     .logo_header{
         max-width: 100px;
     }
-
     /*Elementos del main de index Desktop*/
-    .div1_index{
+    .div_uno_index{
         background-color: plum;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .imagen_div1{
         max-width: 95vw;
+        animation-name: img_div_of;
+        animation-duration: 3s;
+        /*animation-iteration-count: infinite;*/
+        animation-delay: 3s;
     }
-
-    .div2_index{
+    @keyframes img_div_of{
+        0%{
+            transform: translateX(1000px);
+            opacity: 0;
+        }
+        25%{
+            transform: translateX(750px);
+            opacity: 0.25;
+        }
+        50%{
+            transform: translateX(500px);
+            opacity: 0.5;
+        }
+        75%{
+            transform: translateX(250px);
+            opacity: 0.75;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+    .div_dos_index{
         background-color: aquamarine;
         display: flex;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .foto_tour{
         max-height: 20vh;
     }
-
     h3{
         font-size: 25px;
     }
-
-    .div3_index{
+    .div_tres_index{
         background-color: #3498DB;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .logo_index_div3{
         min-width: 120px;
         max-width: 140px;
@@ -495,241 +513,357 @@
         color:firebrick;
         margin-top: 5px;
     }
-
+    .texto_div3{
+        animation-name: divUnoIndex;
+        animation-duration: 3s;
+    }
+    @keyframes divUnoIndex {
+        from{
+            transform: translateX(1000px);
+            opacity: 0;
+        }
+        to{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
     .img_div3{
         max-width: 40px;
     }
-
     .seccion_miviva_index{
         display: flex;
     }
-
-    .div4_index{
+    .div_cuatro_index{
         background-color: wheat;
-        margin: 5px;
         text-align: center;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .video_div4{
         min-width: 95vw;
         min-height: 85vh;
-        margin: 5px;
     }
-
     /*Los dos siguientes corresponden al div5*/
     article{
         max-width: 50vw;
         text-align: center;
     }
-
     .article1, .article2, .article3{
         width: 30vw;
         padding: 10px;      /*Para espacios laterales*/
     }
-
     .img_estrellazul{
         max-width: 80px;
     }
-
-    /*Elementos del main de oferta Desktop*/
-    
+    /*Elementos del main de oferta Desktop*/    
     .logo_oferta_div2{
         max-width: 150px;
     }
-
     .ofertaImg{
-        max-width: 320px;
-        max-height: 400px;
+        width: 290px;
+        height: 300px;
+        transition: width 1s, height 1s;
+    }
+
+    .ofertaImg:hover{
+        width: 340px;
+        height: 350px;
+        cursor: pointer;
     }
 
     .div1_oferta{
         background-color: beige;
         text-align: center;
-        margin: 5px;
-    }
-
-    #letras_div1_of2{
-        font-size: 50px;
-        color: #1C94E5;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
 
     #letras_div1_of1{
         font-size: 20px;
         color: red;
+        animation-name: lDiv1Of1;
+        animation-duration: 2s;
     }
 
+    #letras_div1_of2{
+        font-size: 50px;
+        color: #1C94E5;
+        animation-name: lDiv1Of2;
+        animation-duration: 2s;
+    }
+    /*A continuación un par de líneas de tiempo*/
+    @keyframes lDiv1Of1{
+        from{
+            opacity: 0;
+            transform: translate(-300px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    @keyframes lDiv1Of2{
+        from{
+            opacity: 0;
+            transform: translate(300px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
     .div2_oferta{
         background-color: greenyellow;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivOfertasIzq;
+        animation-duration: 2s;
     }
-
     .caja1 .caja2 .caja3{
         font-size: 16px;
     }
-
     .div3_oferta{
         background-color: peru;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivOfertasDer;
+        animation-duration: 2s;
     }
-
     .div4_oferta{
         background-color: lightcoral;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivOfertasIzq;
+        animation-duration: 2s;
     }
-
     .div5_oferta{
         background-color: lightgreen;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivOfertasDer;
+        animation-duration: 2s;
     }
-
     .div6_oferta{
         background-color: rosybrown;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivOfertasIzq;
+        animation-duration: 2s;
     }
-
     .div7_oferta{
         background-color: orchid;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivOfertasDer;
+        animation-duration: 2s;
     }
-
     .div8_oferta{
         background-color: wheat;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivOfertasIzq;
+        animation-duration: 2s;
     }
-
     .div9_oferta{
         background-color: honeydew;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivOfertasDer;
+        animation-duration: 2s;
     }
-
+    @keyframes lDivOfertasIzq{
+        from{
+            opacity: 0;
+            transform: translate(-300px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    @keyframes lDivOfertasDer{
+        from{
+            opacity: 0;
+            transform: translate(300px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
     /*Elementos del main plantel Desktop*/
     .div1_plantel{
         background-color: antiquewhite;
         font-size: 25px;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .fotolab{
-        max-width: 320px;
+        width: 320px;
+        height: 440px;
+        transition: width 1s, height 1s;
     }
-
+    .fotolab:hover{
+        width: 340px;
+        height: 480px;
+        cursor: pointer;
+        transform: rotate(-5deg);
+    }
+    .fotolab2{
+        width: 320px;
+        height: 440px;
+        transition: width 1s, height 1s;
+    }
+    .fotolab2:hover{
+        width: 340px;
+        height: 480px;
+        cursor: pointer;
+        transform: rotate(5deg);
+    }
     .fotoaulas{
-        max-width: 400px;
+        width: 400px;
+        height: 320px;
+        transition: width 1s, height 1s;
     }
-
+    .fotoaulas:hover{
+        width: 440px;
+        height: 370px;
+        cursor: pointer;
+        transform: rotate(-5deg);
+    }
+    .fotoaulas2{
+        width: 400px;
+        height: 320px;
+        transition: width 1s, height 1s;
+    }
+    .fotoaulas2:hover{
+        width: 440px;
+        height: 370px;
+        cursor: pointer;
+        transform: rotate(5deg);
+    }
     .fotoprac{
-        max-width: 400px;
+        width: 400px;
+        height: 300px;
+        transition: width 1s, height 1s;
     }
-
+    .fotoprac:hover{
+        width: 440px;
+        height: 340px;
+        cursor: pointer;
+        transform: rotate(-5deg);
+    }
+    .fotoprac2{
+        width: 400px;
+        height: 300px;
+        transition: width 1s, height 1s;
+    }
+    .fotoprac2:hover{
+        width: 440px;
+        height: 340px;
+        cursor: pointer;
+        transform: rotate(5deg);
+    }
     .fotorecon{
-        max-width: 550px;
+        width: 550px;
+        height: 400px;
+        transition: width 2s, height 2s;
     }
-
+    .fotorecon:hover{
+        width: 590px;
+        height: 440px;
+        cursor: pointer;
+    }
     .fotoegr{
-        max-width: 320px;
+        width: 320px;
+        transition: width 2s, height 2s;
     }
-
+    .fotoegr:hover{
+        cursor: pointer;
+        width: 360px;
+    }
     .fotoper{
         max-width: 320px;
     }
-
     .div2_plantel{
         background-color: lightblue;
         font-size: 25px;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .div3_plantel{
         background-color: lightsalmon;
         font-size: 25px;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .div4_plantel{
         background-color: lightgreen;
         font-size: 25px;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .div5_plantel{
         background-color: thistle;
         font-size: 25px;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .div6_plantel{
         background-color: khaki;
         font-size: 25px;
         text-align: center;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .titulos_plantel{
-        color: #3498DB;
+        color: #f71111;
         font-size: 38px;
+        animation-name: textoAulas;
+        animation-duration: 3s;
     }
-
+    @keyframes textoAulas {
+        from{
+            opacity: 0;
+            transform: translateX(-500px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
     .info_seccion{
         color: black;
         font-size: 18px;
     }
-
     /*Elementos del main de beca Desktop*/
     .formBeca{
         padding: 10px;
-        margin: 10px;
         font-size: 16px;
     }
-
     .textAreaBeca{
         max-width: 80vw;
     }
-
     .botonBeca{
         font-size: 16px;
     }
-
     /*Elementos del contacto Desktop*/
     iframe{
         min-width: 100vw;
         min-height: 50vh;
-        margin: 5px;
     }
-
     .dirContacto{
         color: #1C94E5;
         text-align: center;
         font-size: 30px;
     }
-
     .contactoMapa{
         background-color: lightgreen;
         color: #1C94E5;
-        margin: 5px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
     .cajasContacto{
         background-color: lightblue;
         color: #1C94E5;
-        font-size: 16px;
-        margin: 5px; 
+        font-size: 16px; 
     }
-
-
-
     /*Adaptaciones de las clases 6 (GRID 1) y 7 (GRID 2):*/
     /*grid para index*/
     .grid_index{
@@ -737,8 +871,7 @@
         grid-template-columns: 100vw;
         grid-template-rows: 100vh 30vh 100vh 100vh 35vh;
     }
-
-    .div5_index{
+    .div_cinco_index{
         display: grid;
         background-color: aqua;
         text-align: center;
@@ -750,62 +883,64 @@
         grid-template-rows: 30vh;
         grid-column-gap: 10px;
         padding: 10px;
-        margin: 1px;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
-
      /*grid para oferta*/
      .grid_oferta{
         display: grid;
         grid-template-columns: 100vw;
         grid-template-rows: 80vh 80vh 80vh 100vh 100vh 50vh 100vh 50vh 100vh;
     }
-
      /*grid para plantel*/
     .grid_plantel{
         display: grid;
         grid-template-columns: 100vw;
         grid-template-rows: 120vh 100vh 100vh 100vh 100vh 100vh;
     }
-
     /*grid para contacto*/
     .grid_contacto{
         display: grid;
         grid-template-columns: 100vw;
         grid-template-rows: 70vh 30vh;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+        animation-name: lDivCont;
+        animation-duration: 2s;
+        
     }
-
+    @keyframes lDivCont{
+        from{
+            opacity: 0;
+            transform: translate(-300px);
+        }
+        to{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
     /*Los siguientes elementos son para gird-areas*/
     #años{
         grid-area: a;
     }
-
     #bachilleratos{
         grid-area: b;
     }
-
     #licenciaturas{
         grid-area: l;
     }
-
     #maestrias{
         grid-area: m;
     }
-
     #egresados{
         grid-area: e;
         justify-content: center;
     }
-
     /*Elementos del footer Desktop (Aplica para todas las páginas del sitio)*/
     footer{
         background-color: aliceblue;
         text-align: center;
         min-width: 100vw;
-        margin: 5px;
     }
-
     .imagen_footer{
         max-width: 320px;
     }
-
 }
