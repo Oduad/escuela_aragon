@@ -452,6 +452,11 @@
     .logo_header{
         max-width: 100px;
     }
+
+    .color_header{
+        background-color: #52B6F9;
+    }
+
     /*Elementos del main de index Desktop*/
     .div_uno_index{
         background-color: plum;
@@ -573,6 +578,10 @@
     .div1_oferta{
         background-color: beige;
         text-align: center;
+        background-image: radial-gradient(white 15%, #52B6F9 85%);
+    }
+
+    .color_col{
         background-image: radial-gradient(white 15%, #52B6F9 85%);
     }
 
