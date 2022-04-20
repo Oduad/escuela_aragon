@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <!--La etiqueta meta es para responsive-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta</title>
-
-    <!--Boostrap CDN - Online-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-
-    <!--Estilos propios-->
-    <link rel="stylesheet" href="../estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <!--La etiqueta meta es para responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oferta</title>
+        <!-- Librería AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--Boostrap CDN - Online-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--Estilos propios-->
+        <link rel="stylesheet" href="../estilos.css">
+        <!--Librería para animaciones-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
 
 <body>
     <header class="animate__animated animate__bounce">
-        <!--<nav>
-            <img src="../img/logo.png" class="logo_header" alt="Logotipo del Centro Universitario Trilingüe">
-            <span class="display"> <a style="text-decoration:none" href="../index.html">Inicio</a></span>
-            <span class="display"> <a style="text-decoration:none" href="oferta.html">Oferta educativa</a></span>
-            <span class="display"> <a style="text-decoration:none" href="plantel.html">Plantel</a></span>
-            <span class="display"> <a style="text-decoration:none" href="beca.html">Beca</a></span>
-            <span class="display"> <a style="text-decoration:none" href="contacto.html">Contacto</a></span>
-        </nav>-->
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light color_header">
             <div class="container-fluid color_header">
@@ -59,145 +51,92 @@
           </nav>
     </header>
     <main>
-        <!--<section class="grid_oferta">
-            <div class="div1_oferta">
-                <img src="../img/logo.png" class="logo_oferta_div2" alt="Logotipo del Centro Universitario Trilingüe">
-                <h4 id="letras_div1_of1">¡Inscríbete ahora!</h4>
-                <h2 id="letras_div1_of2">Próximo Inicio De Clases</h2>
-                <h2 id="letras_div1_of2"> El Tiempo Se Agota</h2>
-            </div>
-            <div class="div2_oferta">
-                <h2>Estudia lo que</h2>
-                <h2>quieras</h2><br>
-                <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
-            </div>
-            <div class="div3_oferta">
-                <h2>Licenciaturas</h2>
-                <p class="caja1">Al final de estos años se certifica que tú sabes, puedes y quieres resolver
-                    profesionalmente problemas complejos en el campo que estudiaste. </p><br>
-                <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
-            </div>
-            <div class="div4_oferta">
-                <h2>Bachilleratos</h2>
-                <p class="caja1">Ofrecer conocimientos más prácticos y puntueales, a fin de preparar a los jóvenes para
-                    un empleo formal. </p><br>
-                <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
-            </div>
-            <div class="div5_oferta">
-                <h2>Bachillerato Tecnológico</h2>
-                <p class="caja1">Comprometidos con tu formación académica te ofrecemos 11 bachilleratos que te va a
-                    formar
-                    como profesionista técnico, gracias a nuesta educación de calidad te ayudamos a adquirir bases para
-                    tu
-                    carrera y que te prepare para el siguiente nivel.</p><br>
-                <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
-            </div>
-            <div class="div6_oferta">
-                <h2>¿Por qué estudiar con nosotros?</h2>
-            </div>
-            <div class="div7_oferta">
-                <h2>Licenciaturas</h2>
-                <p class="caja1">Contamos con 4 licenciaturas que te van a formar como un profesionista, para salir
-                    preparado para el mundo laboral, gracias a nuestra educación de calidad te ayudaremos a adquirir
-                    bases
-                    para tu carrera y que te prepares para el siguiente nivel. </p><br>
-                <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
-            </div>
-            <div class="div8_oferta">
-                <h2>¿Quieres terminar tu licenciatura en menos tiempo?</h2>
-            </div>
-            <div class="div9_oferta">
-                <h2>Maestrías</h2>
-                <p class="caja1">Una maestría garantiza aumentar las posibilidades de mejores puestos laborales. Gracias
-                    a
-                    nuestra educación de calidad te ayudaremos a adquirir bases para tu carrera y que te prepares para
-                    el
-                    siguiente nivel. </p><br>
-                <img src="../img/maestria.jpg" alt="Anuncio de maestrías" class="ofertaImg">
-            </div>-->
+
+        <!-- Sección con Grid-->
         </section>
-        <div class="container">
+        <div class="container-fluid">
             <div class="div1_oferta color_col">
-                <img src="../img/logo.png" class="logo_oferta_div2" alt="Logotipo del Centro Universitario Trilingüe">
-                <h4 id="letras_div1_of1">¡Inscríbete ahora!</h4>
+                <img src="../img/logo.png" class="logo_oferta_div2 img-fluid" alt="Logotipo del Centro Universitario Trilingüe">
+                <h4 id="letras_div1_of1">¡INSCRÍBETE AHORA!</h4>
                 <h2 id="letras_div1_of2">Próximo Inicio De Clases</h2>
                 <h2 id="letras_div1_of2"> El Tiempo Se Agota</h2>
             </div>
             <div class="row">
                 <div class="col color_col">
-                    <h2>Estudia lo que</h2>
-                    <h2>quieras</h2><br>
+                    <h2>Laboratorio de criminalística</h2>
                 </div>
-                <div class="col color_col">
-                    <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col color_col">
-                    <h2>Licenciaturas</h2>
-                    <p class="caja1">Al final de estos años se certifica que tú sabes, puedes y quieres resolver
-                        profesionalmente problemas complejos en el campo que estudiaste. </p><br>
-                </div>
-                <div class="col color_col">
-                    <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col color_col">
-                    <h2>Bachilleratos</h2>
-                    <p class="caja1">Ofrecer conocimientos más prácticos y puntueales, a fin de preparar a los jóvenes
-                        para un empleo formal. </p><br>
-                </div>
-                <div class="col color_col">
-                    <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
+                <div class="col color_col container">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../img/aulas2.jpg" class="d-block w-100 aulas_plantel" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/aulas2.jpg" class="d-block w-100 aulas_plantel" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/aulas2.jpg" class="d-block w-100 aulas_plantel" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                          data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                          data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </div>
             </div>
             <br>
-            <br>
             <div class="row">
                 <div class="col color_col">
-                    <h2>Bachillerato Tecnológico</h2>
-                    <p class="caja1">Comprometidos con tu formación académica te ofrecemos 11 bachilleratos que te va a
-                        formar
-                        como profesionista técnico, gracias a nuesta educación de calidad te ayudamos a adquirir bases
-                        para tu
-                        carrera y que te prepare para el siguiente nivel.</p><br>
+                    <h2>Aulas</h2>
                 </div>
                 <div class="col color_col">
-                    <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
+                    
                 </div>
             </div>
             <br>
-            <br>
             <div class="row">
                 <div class="col color_col">
-                    <h2>Licenciaturas</h2>
-                    <p class="caja1">Contamos con 4 licenciaturas que te van a formar como un profesionista, para salir
-                        preparado para el mundo laboral, gracias a nuestra educación de calidad te ayudaremos a adquirir
-                        bases
-                        para tu carrera y que te prepares para el siguiente nivel. </p><br>
+                    <h2>Personal docente</h2>
                 </div>
                 <div class="col color_col">
-                    <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
+                    
                 </div>
             </div>
             <br>
+            <div class="row">
+                <div class="col color_col">
+                    <h2>Prácticas de mecánica</h2>
+                    <br>
+                </div>
+                <div class="col color_col">
+                    
+                </div>
+            </div>
             <br>
             <div class="row">
                 <div class="col color_col">
-                    <h2>Maestrías</h2>
-                    <p class="caja1">Una maestría garantiza aumentar las posibilidades de mejores puestos laborales.
-                        Gracias a
-                        nuestra educación de calidad te ayudaremos a adquirir bases para tu carrera y que te prepares
-                        para el
-                        siguiente nivel. </p><br>
+                    <h2>Reconocimientos con autoridades</h2>
+                    <br>
                 </div>
                 <div class="col color_col">
-                    <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg">
+                    
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col color_col">
+                    <h2>Egresados</h2>
+                    <br>
+                </div>
+                <div class="col color_col">
+                    
                 </div>
             </div>
         </div>
@@ -205,11 +144,24 @@
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <!-- Copyright -->
         <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            <h2 class="letras_footer">Contamos con validez oficial</h2>
+            <img src="../img/rvoe.png" alt="" class="imagen_footer"> <br><br>
+            Sitio web desarrollado por Oduad Aragón Cruz | © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>
         <!-- Copyright -->
-      </footer>
+    </footer>
+
+    <!--Parte de JavaScrip -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Parte de JavaScrip de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Inicializador de AOS -->
+    <script> AOS.init();</script>
     
 </body>
 

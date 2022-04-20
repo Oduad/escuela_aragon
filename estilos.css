@@ -1,955 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Elementos del header Desktop (Aplica para todas las páginas del sitio)*/
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 100vw;
+}
+
+nav {
+    font-size: 20px;
+    padding: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.color_header {
+    background-color: #52B6F9;
+}
+
+.logo_header {
+    max-width: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: palegreen;
+    background-color: #52B6F9;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: 35px;
+}
+
+/*Elementos del main de index Desktop*/
+
+body {
+    overflow-x: hidden;
+}
+
+.foto_tour {
+    max-width: 30vw;
+}
+
+.container_mvv {
+    padding: 30px;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.texto_mvv {
+    font-size: 32px;
+    text-align: center;
+    color: gray;
+    margin-top: 5px;
+    animation-name: divUnoIndex;
+    animation-duration: 3s;
+}
+
+@keyframes divUnoIndex {
+    from {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.logo_index_mvv {
+    height: 130px;
+    width: 170px;
+    margin: 15px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.img_mvv {
+    max-width: 60px;
+}
+
+.arriba {
+    display: flex;
+}
+
+#mission,
+#vission,
+#values {
+    color: #1C94E5;
+    font-size: 18px;
+}
+
+.caja1_index,
+.caja2_index,
+.caja3_index {
+    font-size: 16px;
+    text-align: center;
+}
+
+.div_video_index {
+    text-align: center;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.video_index {
+    min-width: 95vw;
+    min-height: 85vh;
+}
+
+.img_estrellazul {
+    max-width: 80px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 50px;
+    color: #f71111;
+}
+
+/*Elementos del footer Desktop (Aplica para todas las páginas del sitio)*/
+
+.imagen_footer {
+    max-width: 250px;
+}
+
+.letras_footer {
+    font-size: 18px;
+    color: black;
+}
+
+/*Elementos del main de oferta Desktop*/
+.logo_oferta {
+    height: 140px;
+    width: 180px;
+    margin: 15px;
+    animation-duration: 2s;
+}
+
+.ofertaImg {
+    width: 290px;
+    height: 300px;
+    transition: width 1s, height 1s;
+    margin-top: 60px;
+}
+
+.ofertaImg:hover {
+    width: 340px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.color_col {
+    background-image: radial-gradient(white 15%, #D6EAF8 85%);
+    text-align: center;
+    height: 70vh;
+}
+
+#letras_div1_of1 {
+    font-size: 18px;
+    color: red;
+    animation-name: lDiv1Of1;
+    animation-duration: 2s;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#letras_div1_of2 {
+    font-size: 50px;
+    color: #1C94E5;
+    animation-name: lDiv1Of2;
+    animation-duration: 2s;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*A continuación un par de líneas de tiempo*/
+@keyframes lDiv1Of1 {
+    from {
+        opacity: 0;
+        transform: translate(-300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes lDiv1Of2 {
+    from {
+        opacity: 0;
+        transform: translate(300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.altura_row_oferta{
+    height: 67vh;
+}
+
+.textos_oferta1 {
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: gray;
+    font-size: 50px;
+}
+
+.textos_oferta {
+    justify-content: center;
+    padding-top: 75px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    color: cornflowerblue;
+}
+
+.caja1 {
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 16px;
+}
+
+/*Elementos del main plantel Desktop*/
+.div1_plantel {
+    background-color: antiquewhite;
+    font-size: 25px;
+    text-align: center;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.fotolab {
+    width: 320px;
+    height: 440px;
+    transition: width 1s, height 1s;
+}
+
+.fotolab:hover {
+    width: 340px;
+    height: 480px;
+    cursor: pointer;
+    transform: rotate(-5deg);
+}
+
+.fotolab2 {
+    width: 320px;
+    height: 440px;
+    transition: width 1s, height 1s;
+}
+
+.fotolab2:hover {
+    width: 340px;
+    height: 480px;
+    cursor: pointer;
+    transform: rotate(5deg);
+}
+
+.aulas_plantel {
+    width: 250px;
+    height: 250px;
+    transition: width 1s, height 1s;
+}
+
+.fotoper {
+    max-width: 320px;
+}
+
+.div2_plantel {
+    background-color: lightblue;
+    font-size: 25px;
+    text-align: center;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.div3_plantel {
+    font-size: 25px;
+    text-align: center;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.div4_plantel {
+    font-size: 25px;
+    text-align: center;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.div5_plantel {
+    font-size: 25px;
+    text-align: center;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.div6_plantel {
+    font-size: 25px;
+    text-align: center;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.titulos_plantel {
+    color: #f71111;
+    font-size: 38px;
+    animation-name: textoAulas;
+    animation-duration: 3s;
+}
+
+@keyframes textoAulas {
+    from {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.info_seccion {
+    color: black;
+    font-size: 18px;
+}
+
+/*Elementos del main de beca Desktop*/
+.formBeca {
+    padding: 10px;
+    font-size: 16px;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.textAreaBeca {
+    max-width: 80vw;
+}
+
+.botonBeca {
+    font-size: 16px;
+}
+
+/*Elementos del contacto Desktop*/
+iframe {
+    min-width: 100vw;
+    min-height: 50vh;
+}
+
+.dirContacto {
+    color: #1C94E5;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contactoMapa {
+    color: #1C94E5;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+.cajasContacto {
+    color: #1C94E5;
+    font-size: 16px;
+}
+
+/*Adaptaciones de las clases 6 (GRID 1) y 7 (GRID 2):*/
+/*grid para index*/
+.grid_index {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh 30vh 100vh 100vh 35vh;
+}
+
+.color_div5_index {
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.div_cinco_index {
+    display: grid;
+    background-color: aqua;
+    text-align: center;
+    grid-template-areas:
+        /*5 columnas y 1 fila*/
+        "a b l m e"
+        /*Fila 1*/
+    ;
+    grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+    grid-template-rows: 30vh;
+    grid-column-gap: 10px;
+    padding: 10px;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+}
+
+/*grid para oferta*/
+.grid_oferta {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 80vh 80vh 80vh 100vh 100vh 50vh 100vh 50vh 100vh;
+}
+
+/*grid para plantel*/
+.grid_plantel {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 120vh 100vh 100vh 100vh 100vh 100vh;
+}
+
+/*grid para contacto*/
+.grid_contacto {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 70vh 30vh;
+    background-image: radial-gradient(white 15%, #52B6F9 85%);
+    animation-name: lDivCont;
+    animation-duration: 2s;
+}
+
+@keyframes lDivCont {
+    from {
+        opacity: 0;
+        transform: translate(-300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/*Los siguientes elementos son para gird-areas*/
+#años {
+    grid-area: a;
+}
+
+#bachilleratos {
+    grid-area: b;
+}
+
+#licenciaturas {
+    grid-area: l;
+}
+
+#maestrias {
+    grid-area: m;
+}
+
+#egresados {
+    grid-area: e;
+    justify-content: center;
+}
+
 /*MOBILE FIRST*/
 
 /*SMARTPHONE*/
-@media (max-width:479px) {
+@media (max-width:575px) {
 
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*Elementos del main index de oferta Smarphone*/
+    nav {
+        font-size: 14px;
     }
 
-    /*Elementos del header Smartphone (Aplica para todas las páginas del sitio)*/
-    header{
-        display: flex;
-        flex-flow: column nowrap;
-        background-color: #3498DB;
-        min-width: 100vw;
-        margin: 5px;
-    }
-
-    nav{
-        padding: 30px;
-        background-color: #3498DB;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content:space-evenly;
-        align-content: center;
-        font-size: 15px;
-        margin: 5px;
-    }
-
-    .span{
-        background-color: palevioletred;
-        opacity: 0.4;
-        padding: 5px;
-        cursor: pointer;
-    }
-
-    span:hover{
-        opacity: 0.4;
-    }
-
-    .titulo_header{
-        font-size: 20px;
-        text-align: center;
-    }
-    .logo_header{
+    .logo_header {
         max-width: 60px;
-        filter: brightness(0.1);
-        mix-blend-mode: multiply;
     }
 
-    /*Elementos del main index smartphone*/
-    .div_uno_index{
-        background-color: plum;
-        text-align: center;
-        margin: 5px;
-        background-image: radial-gradient(pink,lightblue);
+    h1 {
+        font-size: 15px;
     }
 
-    .imagen_div1{
-        max-width: 95vw;
+    .texto_mvv {
+        font-size: 20px;
     }
 
-    .letras_div1_index{
+    .logo_index_mvv {
+        height: 90px;
+        width: 120px;
+        margin: 15px;
+    }
+
+    h4 {
         font-size: 12px;
     }
 
-    .div_dos_index{
-        background-color: aquamarine;
-        text-align: center;
-        margin: 5px;
+    .img_mvv {
+        max-width: 36px;
     }
 
-    .foto_tour{
-        max-width: 95vw;
-        min-height: 28vh;
-    }
-
-    .div_tres_index{
-        background-color: #3098DB;
-        margin: 5px;
-    }
-
-    .logo_index_div3{
-        min-width: 80px;
-        max-width: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
-    }
-
-    .texto_div3{
-        font-size: 15px;
-        text-align: center;
-        margin: 5px;
-        color: firebrick;
-    }
-
-    .img_div3{
-        max-width: 40px;
-    }
-
-    .div_cuatro_index{
-        background-color: wheat;
-        margin: 5px;
+    .caja1_index,
+    .caja2_index,
+    .caja3_index {
+        font-size: 12px;
         text-align: center;
     }
 
-    .video_div4{
-        min-width: 90vw;
-        min-height: 25vh;
-    }
-
-    /*Los dos siguientes corresponden al div5*/
-    article{
-        max-width: 90vw;
-        text-align: center;
-    }
-
-    .img_estrellazul{
-        max-width: 55px;
-    }
-
-    /*Elementos del main de oferta smartphone*/
-    .logo_oferta_div2{
+    .img_estrellazul {
         max-width: 50px;
     }
 
-    .ofertaImg{
-        max-width: 260px;
-        max-height: 420px;
+    h3 {
+        font-size: 24px;
     }
 
-    .div1_oferta{
-        background-color: beige;
-        text-align: center;
-        margin: 5px;
+    /*Elementos del footer Desktop (Aplica para todas las páginas del sitio)*/
+
+    .imagen_footer {
+        max-width: 150px;
     }
 
-    #letras_div1_of1{
-        font-size: 10px;
-        color: red;
-    }
-
-    #letras_div1_of2{
-        font-size: 20px;
-        color: #1C94E5;
-    }
-
-    .div2_oferta{
-        background-color: greenyellow;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div3_oferta{
-        background-color: peru;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .caja1, .caja2, .caja3{
+    .letras_footer {
         font-size: 12px;
-    }
-
-    .div4_oferta{
-        background-color: lightcoral;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div5_oferta{
-        background-color: lightgreen;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div6_oferta{
-        background-color: rosybrown;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div7_oferta{
-        background-color: orchid;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div8_oferta{
-        background-color: wheat;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div9_oferta{
-        background-color: honeydew;
-        text-align: center;
-        margin: 5px;
-    }
-
-    /*Elementos del main plantel Smartphone*/
-    .div1_plantel{
-        background-color: antiquewhite;
-        font-size: 25px;
-        text-align: center;
-        margin: 5px;
-        padding: 5px;
-    }
-
-    .fotolab{
-        max-width: 120px;
-    }
-
-    .fotoaulas{
-        max-width: 200px;
-    }
-
-    .fotoprac{
-        max-width: 200px;
-    }
-
-    .fotorecon{
-        max-width: 250px;
-    }
-
-    .fotoegr{
-        max-width: 120px;
-    }
-
-    .fotoper{
-        max-width: 120px;
-    }
-
-    .div2_plantel{
-        background-color: lightblue;
-        font-size: 12px;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div3_plantel{
-        background-color: lightsalmon;
-        font-size: 12px;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div4_plantel{
-        background-color: lightgreen;
-        font-size: 12px;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div5_plantel{
-        background-color: thistle;
-        font-size: 12px;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .div6_plantel{
-        background-color: khaki;
-        font-size: 12px;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .titulos_plantel{
-        color: #3498DB;
-        font-size: 22px;
-    }
-
-    .info_seccion{
         color: black;
+    }
+
+    /*Elementos del main de oferta Smarphone*/
+    .logo_oferta {
+        height: 90px;
+        width: 120px;
+    }
+
+    .ofertaImg {
+        width: 190px;
+        height: 200px;
+        margin-top: 5px;
+    }
+
+    #letras_div1_of1 {
+        font-size: 14px;
+    }
+
+    #letras_div1_of2 {
+        font-size: 30px;
+    }
+
+    .textos_oferta1 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 30px;
+    }
+    
+    .textos_oferta {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-left: 15px;
+    }
+
+    .altura_row1{
+        height: 63vh;
+    }
+
+    .altura_row_oferta{
+        height: 100vh;
+    }
+
+    .altura_col1_oferta{
+        height: 30vh;
+    }
+
+    .altura_col2_oferta{
+        height: 70vh;
+    }
+    
+    .caja1 {
+        padding-right: 25px;
+        padding-left: 25px;
         font-size: 12px;
     }
 
-    /*Elementos del main de beca smartphone*/
-    .formBeca{
-        padding: 10px;
-        margin: 10px;
-        font-size: 10px;
-    }
-
-    .textAreaBeca{
-        max-width: 80vw;
-    }
-
-    /*Elementos del contacto smartphone*/
-    iframe{
-        min-width: 100vw;
-        min-height: 50vh;
-        margin: 5px;
-    }
-
-    .dirContacto{
-        color: #1C94E5;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    .contactoMapa{
-        background-color: lightgreen;
-        color: #1C94E5;
-        margin: 5px;
-    }
-
-    .cajasContacto{
-        background-color: lightblue;
-        color: #1C94E5;
-        justify-content: space-between;
-        font-size: 12px; 
-        margin: 5px;
-    }
-
-    /*Elementos del footer smartphone (Aplca para todas las páginas del sitio)*/
-    footer{
-        background-color: aliceblue;
-        text-align: center;
-        min-width: 100vw;
-        margin: 5px;
-    }
-
-    .imagen_footer{
-        max-width: 160px;
-    }
-
-    .letras_footer{
-        font-size: 15px;
-    }
-
-    /*Adaptaciones de las clases 6 (GRID 1) y 7 (GRID 2):*/
-
-    /*grid para index*/
-    .grid_index{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 54vh 112vh 130vh 35vh 120vh;
-    }
-
-    /*grid para oferta*/
-    .grid_oferta{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 60vh 100vh 100vh 100vh 100vh 50vh 100vh 50vh 120vh;
-    }
-
-    /*grid para plantel*/
-    .grid_plantel{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 120vh 100vh 100vh 100vh 100vh 100vh;
-    }
-
-    /*grid para contacto*/
-    .grid_contacto{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 70vh 30vh;
-    }
-
-    .div_cinco_index{
-        display: grid;
-        background-color: aqua;
-        text-align: center;
-        grid-template-areas: 
-        /*2 columnas y 3 filas*/
-        "a b" /*Fila 1*/
-        "l m" /*Fila 2*/
-        "e e" /*Fila 3*/
-        ;
-        grid-template-columns: 50vw 50vw;
-        grid-template-rows: 30vh;
-        grid-column-gap: 3px;
-        padding: 10px;
-        margin: 5px;
-    }
-
-    #años{
-        grid-area: a;
-    }
-
-    #bachilleratos{
-        grid-area: b;
-    }
-
-    #licenciaturas{
-        grid-area: l;
-    }
-
-    #maestrias{
-        grid-area: m;
-    }
-
-    #egresados{
-        grid-area: e;
-        justify-content: center;
-    }
 }
 
 /*Tablet*/
-@media(min-width:480px) and (max-width:1023px){
-    
-    header{
-        display: flex;
-        flex-flow: column nowrap;
-        background-color: #3498DB;
-        min-width: 100vw;
-    }
-    .titulo_header{
-        font-size: 20px;
-        text-align: center;
-    }
-    .logo_header{
-        max-width: 100px;
-    }
-    
-    body{
-        background-color: orange;
-    }
-}
+@media(min-width:576px) and (max-width:1023px) {
 
-/*DESKTOP*/
-@media (min-width:1024px) {
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    /*Elementos del header Desktop (Aplica para todas las páginas del sitio)*/
-    header{
-        display: flex;
-        flex-flow: column nowrap;
-        background-color: #3498DB;
-        min-width: 100vw;
-    }
-    nav{
-        font-size: 20px;
-        padding: 30px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content:space-evenly;
-        align-content: center;
-    }
-    .titulo_header{
-        font-size: 30px;
-        text-align: center;
-    }
-    .logo_header{
-        max-width: 100px;
+    /*Elementos del main de index Tablet*/
+    nav {
+        font-size: 16px;
     }
 
-    .color_header{
-        background-color: #52B6F9;
-    }
-
-    /*Elementos del main de index Desktop*/
-    .div_uno_index{
-        background-color: plum;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .imagen_div1{
-        max-width: 95vw;
-        animation-name: img_div_of;
-        animation-duration: 3s;
-        /*animation-iteration-count: infinite;*/
-        animation-delay: 3s;
-    }
-    @keyframes img_div_of{
-        0%{
-            transform: translateX(1000px);
-            opacity: 0;
-        }
-        25%{
-            transform: translateX(750px);
-            opacity: 0.25;
-        }
-        50%{
-            transform: translateX(500px);
-            opacity: 0.5;
-        }
-        75%{
-            transform: translateX(250px);
-            opacity: 0.75;
-        }
-        100%{
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-    .div_dos_index{
-        background-color: aquamarine;
-        display: flex;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .foto_tour{
-        max-height: 20vh;
-    }
-    h3{
-        font-size: 25px;
-    }
-    .div_tres_index{
-        background-color: #3498DB;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .logo_index_div3{
-        min-width: 120px;
-        max-width: 140px;
-        margin: 5px;
-    }
-    .texto_div3{
-        font-size: 30px;
-        text-align: center;
-        color:firebrick;
-        margin-top: 5px;
-    }
-    .texto_div3{
-        animation-name: divUnoIndex;
-        animation-duration: 3s;
-    }
-    @keyframes divUnoIndex {
-        from{
-            transform: translateX(1000px);
-            opacity: 0;
-        }
-        to{
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    .img_div3{
-        max-width: 40px;
-    }
-    .seccion_miviva_index{
-        display: flex;
-    }
-    .div_cuatro_index{
-        background-color: wheat;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .video_div4{
-        min-width: 95vw;
-        min-height: 85vh;
-    }
-    /*Los dos siguientes corresponden al div5*/
-    article{
-        max-width: 50vw;
-        text-align: center;
-    }
-    .article1, .article2, .article3{
-        width: 30vw;
-        padding: 10px;      /*Para espacios laterales*/
-    }
-    .img_estrellazul{
+    .logo_header {
         max-width: 80px;
     }
-    /*Elementos del main de oferta Desktop*/    
-    .logo_oferta_div2{
-        max-width: 150px;
-    }
-    .ofertaImg{
-        width: 290px;
-        height: 300px;
-        transition: width 1s, height 1s;
+
+    h1 {
+        font-size: 25px;
     }
 
-    .ofertaImg:hover{
-        width: 340px;
-        height: 350px;
-        cursor: pointer;
+    .texto_mvv {
+        font-size: 25px;
     }
 
-    .div1_oferta{
-        background-color: beige;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
+    .logo_index_mvv {
+        height: 110px;
+        width: 145px;
+        margin: 15px;
     }
 
-    .color_col{
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
+    h4 {
+        font-size: 15px;
     }
 
-    #letras_div1_of1{
-        font-size: 20px;
-        color: red;
-        animation-name: lDiv1Of1;
-        animation-duration: 2s;
+    .img_mvv {
+        max-width: 48px;
     }
 
-    #letras_div1_of2{
-        font-size: 50px;
-        color: #1C94E5;
-        animation-name: lDiv1Of2;
-        animation-duration: 2s;
+    .caja1_index,
+    .caja2_index,
+    .caja3_index {
+        font-size: 14px;
     }
-    /*A continuación un par de líneas de tiempo*/
-    @keyframes lDiv1Of1{
-        from{
-            opacity: 0;
-            transform: translate(-300px);
-        }
-        to{
-            opacity: 1;
-            transform: translate(0);
-        }
+
+    .img_estrellazul {
+        max-width: 65px;
     }
-    @keyframes lDiv1Of2{
-        from{
-            opacity: 0;
-            transform: translate(300px);
-        }
-        to{
-            opacity: 1;
-            transform: translate(0);
-        }
+
+    h3 {
+        font-size: 32px;
     }
-    .div2_oferta{
-        background-color: greenyellow;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivOfertasIzq;
-        animation-duration: 2s;
-    }
-    .caja1 .caja2 .caja3{
-        font-size: 16px;
-    }
-    .div3_oferta{
-        background-color: peru;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivOfertasDer;
-        animation-duration: 2s;
-    }
-    .div4_oferta{
-        background-color: lightcoral;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivOfertasIzq;
-        animation-duration: 2s;
-    }
-    .div5_oferta{
-        background-color: lightgreen;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivOfertasDer;
-        animation-duration: 2s;
-    }
-    .div6_oferta{
-        background-color: rosybrown;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivOfertasIzq;
-        animation-duration: 2s;
-    }
-    .div7_oferta{
-        background-color: orchid;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivOfertasDer;
-        animation-duration: 2s;
-    }
-    .div8_oferta{
-        background-color: wheat;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivOfertasIzq;
-        animation-duration: 2s;
-    }
-    .div9_oferta{
-        background-color: honeydew;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivOfertasDer;
-        animation-duration: 2s;
-    }
-    @keyframes lDivOfertasIzq{
-        from{
-            opacity: 0;
-            transform: translate(-300px);
-        }
-        to{
-            opacity: 1;
-            transform: translate(0);
-        }
-    }
-    @keyframes lDivOfertasDer{
-        from{
-            opacity: 0;
-            transform: translate(300px);
-        }
-        to{
-            opacity: 1;
-            transform: translate(0);
-        }
-    }
-    /*Elementos del main plantel Desktop*/
-    .div1_plantel{
-        background-color: antiquewhite;
-        font-size: 25px;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .fotolab{
-        width: 320px;
-        height: 440px;
-        transition: width 1s, height 1s;
-    }
-    .fotolab:hover{
-        width: 340px;
-        height: 480px;
-        cursor: pointer;
-        transform: rotate(-5deg);
-    }
-    .fotolab2{
-        width: 320px;
-        height: 440px;
-        transition: width 1s, height 1s;
-    }
-    .fotolab2:hover{
-        width: 340px;
-        height: 480px;
-        cursor: pointer;
-        transform: rotate(5deg);
-    }
-    .fotoaulas{
-        width: 400px;
-        height: 320px;
-        transition: width 1s, height 1s;
-    }
-    .fotoaulas:hover{
-        width: 440px;
-        height: 370px;
-        cursor: pointer;
-        transform: rotate(-5deg);
-    }
-    .fotoaulas2{
-        width: 400px;
-        height: 320px;
-        transition: width 1s, height 1s;
-    }
-    .fotoaulas2:hover{
-        width: 440px;
-        height: 370px;
-        cursor: pointer;
-        transform: rotate(5deg);
-    }
-    .fotoprac{
-        width: 400px;
-        height: 300px;
-        transition: width 1s, height 1s;
-    }
-    .fotoprac:hover{
-        width: 440px;
-        height: 340px;
-        cursor: pointer;
-        transform: rotate(-5deg);
-    }
-    .fotoprac2{
-        width: 400px;
-        height: 300px;
-        transition: width 1s, height 1s;
-    }
-    .fotoprac2:hover{
-        width: 440px;
-        height: 340px;
-        cursor: pointer;
-        transform: rotate(5deg);
-    }
-    .fotorecon{
-        width: 550px;
-        height: 400px;
-        transition: width 2s, height 2s;
-    }
-    .fotorecon:hover{
-        width: 590px;
-        height: 440px;
-        cursor: pointer;
-    }
-    .fotoegr{
-        width: 320px;
-        transition: width 2s, height 2s;
-    }
-    .fotoegr:hover{
-        cursor: pointer;
-        width: 360px;
-    }
-    .fotoper{
-        max-width: 320px;
-    }
-    .div2_plantel{
-        background-color: lightblue;
-        font-size: 25px;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .div3_plantel{
-        background-color: lightsalmon;
-        font-size: 25px;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .div4_plantel{
-        background-color: lightgreen;
-        font-size: 25px;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .div5_plantel{
-        background-color: thistle;
-        font-size: 25px;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .div6_plantel{
-        background-color: khaki;
-        font-size: 25px;
-        text-align: center;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .titulos_plantel{
-        color: #f71111;
-        font-size: 38px;
-        animation-name: textoAulas;
-        animation-duration: 3s;
-    }
-    @keyframes textoAulas {
-        from{
-            opacity: 0;
-            transform: translateX(-500px);
-        }
-        to{
-            opacity: 1;
-            transform: translate(0);
-        }
-    }
-    .info_seccion{
-        color: black;
-        font-size: 18px;
-    }
-    /*Elementos del main de beca Desktop*/
-    .formBeca{
-        padding: 10px;
-        font-size: 16px;
-    }
-    .textAreaBeca{
-        max-width: 80vw;
-    }
-    .botonBeca{
-        font-size: 16px;
-    }
-    /*Elementos del contacto Desktop*/
-    iframe{
-        min-width: 100vw;
-        min-height: 50vh;
-    }
-    .dirContacto{
-        color: #1C94E5;
-        text-align: center;
-        font-size: 30px;
-    }
-    .contactoMapa{
-        background-color: lightgreen;
-        color: #1C94E5;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-    .cajasContacto{
-        background-color: lightblue;
-        color: #1C94E5;
-        font-size: 16px; 
-    }
-    /*Adaptaciones de las clases 6 (GRID 1) y 7 (GRID 2):*/
-    /*grid para index*/
-    .grid_index{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 100vh 30vh 100vh 100vh 35vh;
-    }
-    .div_cinco_index{
-        display: grid;
-        background-color: aqua;
-        text-align: center;
-        grid-template-areas: 
-        /*5 columnas y 1 fila*/
-        "a b l m e" /*Fila 1*/
-        ;
-        grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
-        grid-template-rows: 30vh;
-        grid-column-gap: 10px;
-        padding: 10px;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-    }
-     /*grid para oferta*/
-     .grid_oferta{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 80vh 80vh 80vh 100vh 100vh 50vh 100vh 50vh 100vh;
-    }
-     /*grid para plantel*/
-    .grid_plantel{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 120vh 100vh 100vh 100vh 100vh 100vh;
-    }
-    /*grid para contacto*/
-    .grid_contacto{
-        display: grid;
-        grid-template-columns: 100vw;
-        grid-template-rows: 70vh 30vh;
-        background-image: radial-gradient(white 15%, #52B6F9 85%);
-        animation-name: lDivCont;
-        animation-duration: 2s;
-        
-    }
-    @keyframes lDivCont{
-        from{
-            opacity: 0;
-            transform: translate(-300px);
-        }
-        to{
-            opacity: 1;
-            transform: translate(0);
-        }
-    }
-    /*Los siguientes elementos son para gird-areas*/
-    #años{
-        grid-area: a;
-    }
-    #bachilleratos{
-        grid-area: b;
-    }
-    #licenciaturas{
-        grid-area: l;
-    }
-    #maestrias{
-        grid-area: m;
-    }
-    #egresados{
-        grid-area: e;
-        justify-content: center;
-    }
+
     /*Elementos del footer Desktop (Aplica para todas las páginas del sitio)*/
-    footer{
-        background-color: aliceblue;
-        text-align: center;
-        min-width: 100vw;
+
+    .imagen_footer {
+        max-width: 200px;
     }
-    .imagen_footer{
-        max-width: 320px;
+
+    .letras_footer {
+        font-size: 15px;
+        color: black;
     }
+
+    /*Elementos del main de oferta Tablet*/
+    .logo_oferta {
+        height: 110px;
+        width: 150px;
+    }
+
+    #letras_div1_of1 {
+        font-size: 16px;
+    }
+
+    #letras_div1_of2 {
+        font-size: 40px;
+    }
+
+    .ofertaImg {
+        width: 260px;
+        height: 275px;
+        transition: width 1s, height 1s;
+        margin-top: 60px;
+    }
+
+    .textos_oferta1 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        font-size: 40px;
+    }
+    
+    .textos_oferta {
+        padding-top: 65px;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 20px;
+    }
+    
+    .caja1 {
+        padding-right: 25px;
+        padding-left: 25px;
+        font-size: 14px;
+    }
+
+    .altura_row_oferta{
+        height: 75vh;
+    }
+
+    .altura_col1_oferta{
+        height: 75vh;
+    }
+
+    .altura_col2_oferta{
+        height: 75vh;
+    }   
 }
