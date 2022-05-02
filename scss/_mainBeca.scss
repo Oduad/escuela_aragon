@@ -1,0 +1,36 @@
+@mixin tamanletras($fontsi) {
+    font-size: $fontsi;
+}
+
+/*Elementos del main de beca Desktop*/
+.formBeca {
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    @include tamanletras(16px);     /*Aquí se us mixin*/
+    /*font-size: 16px;*/
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+}
+
+.h1_beca{
+    text-align: center;
+    color: $header_deg2;            /*Aquí se usa una variable*/
+}
+
+.becaN{
+    font-weight: bold;
+}
+
+.textAreaBeca {
+    max-width: 80vw;
+}
+
+.botonBeca {
+    @include tamanletras(16px);     /*Aquí se usa mixin*/
+    /*font-size: 16px;*/
+}
+
+.asterisk {
+    color: red;
+}

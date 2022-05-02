@@ -1,0 +1,72 @@
+/*Elementos del main plantel Desktop*/
+@mixin tamanio($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin tamanletras($font_s) {
+    font-size: $font_s;
+}
+
+.logo_plantel {
+    @include tamanio(180px, 140px);             /*aquí se usa un mixin*/
+    /*width: 180px;
+    height: 140px;*/
+    margin: 15px;
+    animation-duration: 2s;
+}
+
+#letras_div1_pl {
+    @include tamanletras(35px);                 /*Aquí se usa un mixin*/
+    /*font-size: 35px;*/
+    color: $header_deg2;
+    animation-name: lDiv1Of1;
+    animation-duration: 2s;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*A continuación un par de líneas de tiempo para animación a las letras*/
+@keyframes lDiv1PL {
+    from {
+        opacity: 0;
+        transform: translate(-600px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.titulos_plantel {
+    justify-content: center;
+    @include tamanletras(40px);                 /*Aquí se usa un mixin*/
+    /*font-size: 40px;*/
+    padding-top: 75px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    color: $color_textos;                       /*Aquí se usa un mixin*/
+}
+
+.texto_cajasPl {
+    padding-right: 25px;
+    padding-left: 25px;
+    @include tamanletras(16px);                 /*Aquí se usa un mixin*/
+    /*font-size: 16px;*/
+}
+
+.plantelImgAulas {
+    @include tamanio(341px, 256px);             /*Aquí se usa un mixin*/
+    /*width: 290px;
+    height: 300px;*/
+    margin-top: 60px;
+}
+
+.plantelImgCrim {
+    @include tamanio(250px, 250px);             /*Aquí se usa un mixin*/
+    /*width: 290px;
+    height: 300px;*/
+    margin-top: 60px;
+}

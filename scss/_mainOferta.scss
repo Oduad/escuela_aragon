@@ -1,0 +1,115 @@
+/*Elementos del main de oferta Desktop*/
+@mixin tamanio($width, $height) { 
+    width: $width;
+    height: $height;
+}
+
+@mixin tamLetra($font) { 
+    font-size: $font;
+}
+
+.logo_oferta {
+    @include tamanio(180px, 140px);             /*Aquí aplicamos un mixin*/
+    /*width: 180px;
+    height: 140px;*/
+    margin: 15px;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+#letras_div_of1 {
+    @include tamLetra(18px);                     /*Aquí aplicamos un mixin*/
+    /*font-size: 18px;*/
+    color: red;
+    animation-name: lDiv1Of1;
+    animation-duration: 2s;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#letras_div_of2 {
+    @extend #letras_div_of1;                    /*Aquí aplicamos un extend*/
+    /*animation-duration: 2s;
+    padding-right: 15px;
+    padding-left: 15px;*/
+    animation-name: lDiv1Of2;
+    @include tamLetra(50px);                     /*Aquí aplicamos un mixin*/
+    /*font-size: 50px;*/
+    color: #1C94E5;
+}
+
+/*A continuación un par de líneas de tiempo*/
+@keyframes lDiv1Of1 {
+    from {
+        opacity: 0;
+        transform: translate(-600px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes lDiv1Of2 {
+    from {
+        opacity: 0;
+        transform: translate(600px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.altura_row_oferta{
+    height: 67vh;
+}
+
+.color_col {
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    text-align: center;
+}
+
+.texto_oferta { /*Corresponde a líneas comentadas*/
+    justify-content: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: gray;
+    @include tamLetra(50px);                         /*Aquí aplicamos un mixin*/
+    /*font-size: 50px;*/
+}
+
+.titulos_oferta {
+    justify-content: center;
+    @include tamLetra(40px);                         /*Aquí aplicamos un mixin*/
+    /*font-size: 40px;*/
+    padding-top: 75px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    color: $color_textos;                            /*Aquí se usa una variable*/
+}
+
+.texto_cajas {
+    padding-right: 25px;
+    padding-left: 25px;
+    @include tamLetra(16px);                         /*Aquí aplicamos un mixin*/
+    /*font-size: 16px;*/
+}
+
+.ImagenesOferta {
+    @include tamanio(290px, 300px);                  /*Aquí aplicamos un mixin*/
+    /*width: 290px;
+    height: 300px;*/
+    transition: width 1s, height 1s;
+    margin-top: 60px;
+}
+
+.ImagenesOferta:hover {
+    @include tamanio(320px, 330px);                  /*Aquí aplicamos un mixin*/
+    /*width: 340px;
+    height: 350px;*/
+    cursor: pointer;
+}

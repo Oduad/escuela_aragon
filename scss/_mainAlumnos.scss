@@ -1,0 +1,24 @@
+.color_cont_al{
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    padding: 35px;                    /*Aquí se usan variables*/
+}
+
+.h1_alumnos{
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 40px;
+    text-align: center;
+    color: $header_deg2;             /*Aquí se usa una variable*/
+}
+
+.col{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.btn{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

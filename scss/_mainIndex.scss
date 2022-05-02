@@ -1,0 +1,126 @@
+/*Elementos del main index Desktop*/
+@mixin tamanio($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin tamanioLetra($font_si) {
+    font-size: $font_si;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.h1_index{
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @include tamanioLetra(40px);
+    /*font-size: 40px;*/
+    text-align: center;
+    color: $header_deg2; /*Aquí se usa una variable*/
+}
+
+.foto_tour { /*Corresponde a líneas comentadas(en espera)*/
+    max-width: 30vw;
+}
+
+/*.colordiv{ 
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    text-align: center;
+}Falta modificar*/
+
+.arriba {
+    display: flex;
+}
+
+.texto_mvv {
+    @include tamanioLetra(36px);
+    /*font-size: 36px;*/
+    text-align: center;
+    color: $color_texto_mvv; /*Aquí se usa una variable*/
+    margin-top: 25px;
+    animation-name: divUnoIndex;
+    animation-duration: 3s;
+}
+
+@keyframes divUnoIndex {
+    from {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.logo_index_mvv {
+    height: 130px;
+    width: 170px;
+    margin: 15px;
+}
+
+.cut{
+    @include tamanioLetra(16px);
+    /*font-size: 16px;*/
+    color: $header_deg2; /*Aquí se usa una variable*/
+}
+
+.img_mvv {
+    max-width: 60px;
+}
+
+#mission{
+    color: #1C94E5;
+    @include tamanioLetra(18px);
+    /*font-size: 18px;*/
+}
+
+#vission,
+#values {
+    @extend #mission;
+}/*Aquí se aplica el extend*/
+
+.caja1_index {
+    @include tamanioLetra(16px);
+    /*font-size: 16px;*/
+    text-align: center;
+}
+
+.caja2_index,
+.caja3_index {
+    @extend .caja1_index;
+}/*Aquí se aplica el extend*/
+
+.div_video_index {
+    text-align: center;
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+}
+
+.color_div5_index {
+    @extend .div_video_index; /*Aquí se aplica el extend*/
+}  
+
+.video_index {
+    min-width: 95vw;
+    min-height: 85vh;
+}
+
+.img_estrellazul {
+    max-width: 80px;
+}
+
+.h3_index{
+    padding-top: 10px;
+    @include tamanioLetra(45px);
+    /*font-size: 45px;*/
+    color: red;
+}
+
+.h4_index{
+    padding-bottom: 20px;
+}

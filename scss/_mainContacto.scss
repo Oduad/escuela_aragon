@@ -1,0 +1,50 @@
+@mixin tamanio($font_si) {
+    font-size: $font_si;
+}
+
+@mixin centrado($cent) {
+    text-align: $cent;
+}
+
+.contactoMapa {
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);    /*Aquí se usan variables*/
+    /*text-align: center;*/
+    @include centrado(center);                  /*Aquí se usa un mixin*/
+}
+
+.h1_Contacto{
+    color: $header_deg2;                        /*Aquí se usa una variable*/
+    /*text-align: center;*/
+    @include centrado(center);                  /*Aquí se usa mixin*/
+}
+
+iframe {
+    min-width: 90vw;
+    min-height: 50vh;
+}
+
+.cajasContacto {
+    color: $header_deg2;                        /*Aquí se usa una variable*/
+    @include tamanio(18px);                     /*Aquí se usa un mixin*/
+    /*font-size: 18px;*/
+    padding: 4px;
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+}
+
+.card-title {
+    color:#0598FE;
+    /*text-align: center;*/
+    @include centrado(center);                  /*Aquí se usa un mixin*/
+    @include tamanio(14px);                     /*Aquí se usa un mixin*/
+    /*font-size: 14px;*/
+    font-weight: 600;
+}
+
+.card-text {
+    @extend .card-title;                        /*Aquí se aplica extend*/
+    @include tamanio(13px);                     /*Aquí se usa un mixin*/
+    /*font-size: 13px;*/ 
+}
+
+
+/*Color extra:#1C94E5*/
