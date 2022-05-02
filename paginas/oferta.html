@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <!--La etiqueta meta es para responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta</title>
+    <!-- SEO - Keywords-->
+    <meta name="keywords" content="Universidad CUT, licenciaturas CUT, maestrías CUT, bachilleratos CUT">
+    <!-- SEO - Título-->
+    <title>Oferta de CUT</title>
+    <!-- SEO - Description -->
+    <meta name="description" content="Licenciaturas y maestrías que ofrecemos en el CUT de Miahuatlán">
     <!-- Librería AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Boostrap CDN - Online-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Estilos propios-->
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css"> <!--Sin sass: href="../estilos.css"-->
     <!--Librería para animaciones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -20,7 +25,7 @@
 <body>
     <!--Inicio del header-->
     <header class="animate__animated animate__bounce">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light color_header">
             <div class="container-fluid color_header">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../img/logo.png" class="logo_header" alt="Logotipo del Centro Universitario Trilingüe"
@@ -34,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../paginas/oferta.html">Oferta educativa</a>
@@ -46,7 +51,7 @@
                             <a class="nav-link" href="../paginas/beca.html">Obtén una beca</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../paginas/contacto.html">USICAMM</a>
+                            <a class="nav-link" href="../paginas/alumnos.html">Alumnos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
@@ -59,22 +64,18 @@
     <!--Fin del header-->
 
     <main>
-        </section>
         <div class="container-fluid">
-            <div class="row altura_row1">
+            <div class="row altura_row_oferta">
                 <div class="col color_col">
-                    <br>
                     <img src="../img/logo.png" class="logo_oferta" data-aos="zoom-in-down"
                         alt="Logotipo del Centro Universitario Trilingüe">
-                    <h4 id="letras_div1_of1">¡INSCRÍBETE AHORA!</h4>
-                    <h2 id="letras_div1_of2">Próximo Inicio De Clases</h2>
-                    <h2 id="letras_div1_of2"> El Tiempo Se Agota</h2>
+                    <h4 id="letras_div_of1">¡INSCRÍBETE AHORA!</h4>
+                    <h1 id="letras_div_of2">Próximo Inicio De Clases <br> El tiempo se agota</h1>
                 </div>
             </div>
-            <br>
             <!--<div class="row altura_row_oferta">
                 <div class="col col-md-12 color_col">
-                    <h2 class="textos_oferta1" data-aos="zoom-in-down">Estudia lo que quieras</h2>
+                    <h2 class="texto_oferta" data-aos="zoom-in-down">Estudia lo que quieras</h2>
                     <div class="container">
                         <div class="row">
                             <div class="col">
@@ -107,71 +108,72 @@
                     </div>
                 </div>
             </div>-->
-            <br>
+            <!--<br>-->
             <div class="row altura_row_oferta">
-                <div class="col-12 col-sm-6 col-md-4 color_col altura_col1_oferta">
-                    <h2 class="textos_oferta" data-aos="zoom-in-down">Licenciaturas</h2>
-                    <p class="caja1" data-aos="zoom-in-down">Contamos con 4 licenciaturas que te van a formar como un
+                <div class="col-12 col-sm-8 col-md-4 color_col altura_col1_oferta">
+                    <h2 class="titulos_oferta" data-aos="zoom-in-down">Licenciaturas</h2>
+                    <p class="texto_cajas" data-aos="zoom-in-down">Contamos con 4 licenciaturas que te van a formar como un
                         profesionista, para salir
                         preparado para el mundo laboral, gracias a nuestra educación de calidad te ayudaremos a adquirir
                         bases
                         para tu carrera y que te prepares para el siguiente nivel. </p><br>
                 </div>
-                <div class="col-12 col-sm-6 col-md-8 color_col altura_col2_oferta">
-                    <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ofertaImg"
-                        data-aos="zoom-in-down">
+                <div class="col-12 col-sm-4 col-md-8 color_col altura_col2_oferta">
+                    <img src="../img/licenciatura.jpg" alt="Anuncio de licenciaturas" class="ImagenesOferta"
+                    data-aos="zoom-in-down">
                 </div>
             </div>
-            <br>
+            <!--<br>-->
             <div class="row altura_row_oferta">
                 <div class="col-12 col-sm-6 col-md-4 color_col altura_col1_oferta">
-                    <h2 class="textos_oferta" data-aos="zoom-in-down">Licenciatura en criminalística y ciminología</h2>
-                    <p class="caja1" data-aos="zoom-in-down">Información sobre la licenciatura en criminalística y
+                    <h2 class="titulos_oferta" data-aos="zoom-in-down">Licenciatura en criminalística y ciminología</h2>
+                    <p class="texto_cajas" data-aos="zoom-in-down">Información sobre la licenciatura en criminalística y
                         ciminología. </p><br>
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 color_col altura_col2_oferta">
-                    <img src="../img/criminalistica.jpg" alt="Anuncio de licenciaturas" class="ofertaImg"
+                    <img src="../img/criminalistica.jpg" alt="Anuncio de licenciaturas" class="ImagenesOferta"
                         data-aos="zoom-in-down">
                 </div>
             </div>
-            <br>
+            <!--<br>-->
             <div class="row altura_row_oferta">
                 <div class="col-12 col-sm-6 col-md-4 color_col altura_col1_oferta">
-                    <h2 class="textos_oferta" data-aos="zoom-in-down">Licenciatura en pedagogía</h2>
-                    <p class="caja1" data-aos="zoom-in-down">Información sobre la licenciatura en pedagogía. </p><br>
+                    <h2 class="titulos_oferta" data-aos="zoom-in-down">Licenciatura en pedagogía</h2>
+                    <p class="texto_cajas" data-aos="zoom-in-down">Información sobre la licenciatura en pedagogía. </p><br>
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 color_col altura_col2_oferta">
-                    <img src="../img/pedagogia.jpg" alt="Anuncio de licenciaturas" class="ofertaImg"
+                    <img src="../img/pedagogia.jpg" alt="Anuncio de licenciaturas" class="ImagenesOferta"
                         data-aos="zoom-in-down">
                 </div>
             </div>
-            <br>
+            <!--<br>-->
             <div class="row altura_row_oferta">
                 <div class="col-12 col-sm-6 col-md-4 color_col altura_col1_oferta">
-                    <h2 class="textos_oferta" data-aos="zoom-in-down">Licenciatura en administración</h2>
-                    <p class="caja1" data-aos="zoom-in-down">Información sobre la licenciatura en administración. </p>
+                    <h2 class="titulos_oferta" data-aos="zoom-in-down">Licenciatura en administración</h2>
+                    <p class="texto_cajas" data-aos="zoom-in-down">Información sobre la licenciatura en administración. </p>
                     <br>
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 color_col altura_col2_oferta">
-                    <img src="../img/administracion.jpg" alt="Anuncio de licenciaturas" class="ofertaImg"
+                    <img src="../img/administracion.jpg" alt="Anuncio de licenciaturas" class="ImagenesOferta"
                         data-aos="zoom-in-down">
                 </div>
             </div>
-            <br>
+            <!--<br>-->
             <div class="row altura_row_oferta">
                 <div class="col-12 col-sm-6 col-md-4 color_col altura_col1_oferta">
-                    <h2 class="textos_oferta" data-aos="zoom-in-down">Licenciatura en derecho</h2>
+                    <h2 class="titulos_oferta" data-aos="zoom-in-down">Licenciatura en derecho</h2>
                     <p class="caja1" data-aos="zoom-in-down">Información sobre la licenciatura en derecho. </p><br>
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 color_col altura_col2_oferta">
-                    <img src="../img/derecho.jpg" alt="Anuncio de licenciaturas" class="ofertaImg"
+                    <img src="../img/derecho.jpg" alt="Anuncio de licenciaturas" class="ImagenesOferta"
                         data-aos="zoom-in-down">
                 </div>
             </div>
+            <!--
             <br>
             <div class="row altura_row_oferta">
                 <div class="col-12 col-sm-6 col-md-4 color_col altura_col1_oferta">
-                    <h2 class="textos_oferta" data-aos="zoom-in-down">Bachillerato Tecnológico</h2>
+                    <h2 class="titulos_oferta" data-aos="zoom-in-down">Bachillerato Tecnológico</h2>
                     <p class="caja1" data-aos="zoom-in-down">Comprometidos con tu formación académica te ofrecemos 11
                         bachilleratos que te va a
                         formar
@@ -180,14 +182,14 @@
                         carrera y que te prepare para el siguiente nivel.</p><br>
                 </div>
                 <div class="col-12 col-sm-6 col-md-8 color_col altura_col2_oferta">
-                    <img src="../img/metas.jpg" alt="Anuncio de licenciaturas" class="ofertaImg"
+                    <img src="../img/metas.jpg" alt="Anuncio de licenciaturas" class="ImagenesOferta"
                         data-aos="zoom-in-down">
                 </div>
             </div>
             <br>
-            <!--<div class="row altura_row_oferta">
+            <div class="row altura_row_oferta">
                 <div class="col-12 col-md-4 color_col altura_col1_oferta">
-                    <h2 class="textos_oferta" data-aos="zoom-in-down">Maestrías</h2>
+                    <h2 class="titulos_oferta" data-aos="zoom-in-down">Maestrías</h2>
                     <p class="caja1" data-aos="zoom-in-down">Una maestría garantiza aumentar las posibilidades de
                         mejores puestos laborales.
                         Gracias a
@@ -196,18 +198,18 @@
                         siguiente nivel. </p><br>
                 </div>
                 <div class="col-12 col-md-8 color_col altura_col2_oferta">
-                    <img src="../img/maestria.jpg" alt="Anuncio de licenciaturas" class="ofertaImg"
+                    <img src="../img/maestria.jpg" alt="Anuncio de licenciaturas" class="ImagenesOferta"
                         data-aos="zoom-in-down">
                 </div>
             </div>
             <br>
             <div class="row altura_row_oferta">
                 <div class="col-12 col-md-4 color_col altura_col1_oferta">
-                    <h2 class="textos_oferta" data-aos="zoom-in-down">Maestría en juicios orales</h2>
+                    <h2 class="titulos_oferta" data-aos="zoom-in-down">Maestría en juicios orales</h2>
                     <p class="caja1" data-aos="zoom-in-down">Información sobre la maestría en juicios orales. </p><br>
                 </div>
                 <div class="col-12 col-md-8 color_col altura_col1_oferta">
-                    <img src="../img/juicios.jpg" alt="Anuncio de licenciaturas" class="ofertaImg"
+                    <img src="../img/juicios.jpg" alt="Anuncio de licenciaturas" class="ImagenesOferta"
                         data-aos="zoom-in-down">
                 </div>
             </div>-->
@@ -219,7 +221,7 @@
         <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             <h2 class="letras_footer">Contamos con validez oficial</h2>
             <img src="../img/rvoe.png" alt="" class="imagen_footer"> <br><br>
-            Sitio web desarrollado por Oduad Aragón Cruz | © 2020 Copyright:
+            Sitio web desarrollado por Ing. Oduad Aragón Cruz | © 2020 Copyright:
             <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>
         <!-- Copyright -->
@@ -239,3 +241,21 @@
 </body>
 
 </html>
+
+<!-- Duda1: Medidas de Boostrap -->
+
+<!-- Medidas de Boostrap -->
+<!-- Smartphone - Max: 479px-->
+<!-- Tablet - Min: 480px - Max: 1023 -->
+<!-- Desktop - Min: 1024px-->
+
+<!-- Mis medidas -->
+<!-- Smartphone - Max: 575px-->
+<!-- Tablet - Min: 576px - Max: 1023 -->
+<!-- Desktop - Min: 1024px-->
+
+<!-- Duda2: ¿Se puede doble animación? No -->
+<!-- Duda3: Espacio entre header y h1 -->
+<!-- Duda4: Espacios verticales altura_col1_oferta  -->
+<!-- Duda5: Metí vídeo BS ¿Estoy bien? -->
+<!-- Duda6: ¿Las animaciones de AOS son sustituto de las manuales en CSS? Sí --> 
