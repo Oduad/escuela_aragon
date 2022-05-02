@@ -197,6 +197,7 @@ body {
   /*Aquí aplicamos un mixin*/
   /*font-size: 50px;*/
   color: #1C94E5;
+  padding-bottom: 20px;
 }
 
 /*A continuación un par de líneas de tiempo*/
@@ -222,6 +223,10 @@ body {
 }
 .altura_row_oferta {
   height: 67vh;
+}
+
+.altura1 {
+  height: 87vh;
 }
 
 .color_col {
@@ -299,8 +304,7 @@ body {
   color: #52B6F9;
   animation-name: lDiv1Of1;
   animation-duration: 2s;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 60px;
 }
 
 /*A continuación un par de líneas de tiempo para animación a las letras*/
@@ -325,6 +329,7 @@ body {
   padding-bottom: 30px;
   color: cornflowerblue;
   /*Aquí se usa un mixin*/
+  text-align: center;
 }
 
 .texto_cajasPl {
@@ -333,6 +338,8 @@ body {
   font-size: 16px;
   /*Aquí se usa un mixin*/
   /*font-size: 16px;*/
+  text-align: center;
+  color: black;
 }
 
 .plantelImgAulas {
@@ -341,7 +348,7 @@ body {
   /*Aquí se usa un mixin*/
   /*width: 290px;
   height: 300px;*/
-  margin-top: 60px;
+  margin: 60px;
 }
 
 .plantelImgCrim {
@@ -350,7 +357,7 @@ body {
   /*Aquí se usa un mixin*/
   /*width: 290px;
   height: 300px;*/
-  margin-top: 60px;
+  margin: 60px;
 }
 
 /*Elementos del main de beca Desktop*/
