@@ -22,8 +22,7 @@
     color: $header_deg2;
     animation-name: lDiv1Of1;
     animation-duration: 2s;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 60px;
 }
 
 /*A continuación un par de líneas de tiempo para animación a las letras*/
@@ -48,6 +47,7 @@
     padding-left: 25px;
     padding-bottom: 30px;
     color: $color_textos;                       /*Aquí se usa un mixin*/
+    text-align: center;
 }
 
 .texto_cajasPl {
@@ -55,18 +55,20 @@
     padding-left: 25px;
     @include tamanletras(16px);                 /*Aquí se usa un mixin*/
     /*font-size: 16px;*/
+    text-align: center;
+    color: black;
 }
 
 .plantelImgAulas {
     @include tamanio(341px, 256px);             /*Aquí se usa un mixin*/
     /*width: 290px;
     height: 300px;*/
-    margin-top: 60px;
+    margin: 60px;
 }
 
 .plantelImgCrim {
     @include tamanio(250px, 250px);             /*Aquí se usa un mixin*/
     /*width: 290px;
     height: 300px;*/
-    margin-top: 60px;
+    margin: 60px;
 }

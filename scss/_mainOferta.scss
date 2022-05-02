@@ -36,6 +36,7 @@
     @include tamLetra(50px);                     /*Aquí aplicamos un mixin*/
     /*font-size: 50px;*/
     color: #1C94E5;
+    padding-bottom: 20px;
 }
 
 /*A continuación un par de líneas de tiempo*/
@@ -65,6 +66,10 @@
 
 .altura_row_oferta{
     height: 67vh;
+}
+
+.altura1{
+    height: 87vh;
 }
 
 .color_col {
