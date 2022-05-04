@@ -12,7 +12,6 @@
     @include tamanio(180px, 140px);             /*Aquí aplicamos un mixin*/
     /*width: 180px;
     height: 140px;*/
-    margin: 15px;
     animation-duration: 2s;
     cursor: pointer;
 }
@@ -23,8 +22,9 @@
     color: red;
     animation-name: lDiv1Of1;
     animation-duration: 2s;
-    padding-right: 15px;
-    padding-left: 15px;
+
+    padding-top: 35px;
+    padding-left: 20px;
 }
 
 #letras_div_of2 {
@@ -64,16 +64,15 @@
     }
 }
 
-.altura_row_oferta{
-    height: 67vh;
-}
-
 .altura1{
-    height: 87vh;
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    height: 100vh;
+    text-align: center;
 }
 
 .color_col {
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    height: 70vh;
     text-align: center;
 }
 
@@ -117,4 +116,42 @@
     /*width: 340px;
     height: 350px;*/
     cursor: pointer;
+}
+
+@media (max-width: 576px){
+
+    .logo_oferta {
+        height: 91px;
+        width: 119px;
+        margin: 0;
+    }
+
+    #letras_div_of1 {
+        @include tamanioLetra(16px);
+    }
+
+    #letras_div_of2 {
+        @include tamanioLetra(30px);
+    }
+
+    .altura1{
+        height: 60vh;
+    }
+
+    .color_col{
+        height: 65vh;
+    }
+
+    .titulos_oferta {
+        @include tamLetra(24px);                         /*Aquí aplicamos un mixin*/
+        /*font-size: 40px;*/
+        padding-top: 75px;
+        padding-bottom: 30px;
+    }
+
+    .texto_cajas {
+        @include tamLetra(12px);                         /*Aquí aplicamos un mixin*/
+        /*font-size: 16px;*/
+    }
+
 }

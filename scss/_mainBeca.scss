@@ -16,6 +16,7 @@
 .h1_beca{
     text-align: center;
     color: $header_deg2;            /*Aquí se usa una variable*/
+    font-size: 38px;
 }
 
 .becaN{
@@ -33,4 +34,20 @@
 
 .asterisk {
     color: red;
+}
+
+@media (max-width: 576px){
+
+    .formBeca {
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        @include tamanletras(12px);     /*Aquí se us mixin*/
+    }
+
+    .h1_beca{
+        font-size: 20px;
+    }
+
 }

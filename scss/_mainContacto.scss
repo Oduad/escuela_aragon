@@ -7,15 +7,19 @@
 }
 
 .contactoMapa {
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);    /*Aquí se usan variables*/
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    /*Aquí se usan variables*/
     /*text-align: center;*/
-    @include centrado(center);                  /*Aquí se usa un mixin*/
+    @include centrado(center);
+    /*Aquí se usa un mixin*/
 }
 
-.h1_Contacto{
-    color: $header_deg2;                        /*Aquí se usa una variable*/
+.h1_Contacto {
+    color: $header_deg2;
+    /*Aquí se usa una variable*/
     /*text-align: center;*/
-    @include centrado(center);                  /*Aquí se usa mixin*/
+    @include centrado(center);
+    /*Aquí se usa mixin*/
 }
 
 iframe {
@@ -24,27 +28,55 @@ iframe {
 }
 
 .cajasContacto {
-    color: $header_deg2;                        /*Aquí se usa una variable*/
-    @include tamanio(18px);                     /*Aquí se usa un mixin*/
+    color: $header_deg2;
+    /*Aquí se usa una variable*/
+    @include tamanio(18px);
+    /*Aquí se usa un mixin*/
     /*font-size: 18px;*/
     padding: 4px;
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    /*Aquí se usan variables*/
 }
 
 .card-title {
-    color:#0598FE;
+    color: #0598FE;
     /*text-align: center;*/
-    @include centrado(center);                  /*Aquí se usa un mixin*/
-    @include tamanio(14px);                     /*Aquí se usa un mixin*/
+    @include centrado(center);
+    /*Aquí se usa un mixin*/
+    @include tamanio(14px);
+    /*Aquí se usa un mixin*/
     /*font-size: 14px;*/
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .card-text {
-    @extend .card-title;                        /*Aquí se aplica extend*/
-    @include tamanio(13px);                     /*Aquí se usa un mixin*/
-    /*font-size: 13px;*/ 
+    @extend .card-title;
+    /*Aquí se aplica extend*/
+    @include tamanio(13px);
+    /*Aquí se usa un mixin*/
+    /*font-size: 13px;*/
 }
 
+
+@media(max-width: 576px) {
+
+    .card-title {
+        color: #0598FE;
+        @include centrado(center);
+        /*Aquí se usa un mixin*/
+        @include tamanio(13px);
+        /*Aquí se usa un mixin*/
+        font-weight: 500;
+    }
+
+    .card-text {
+        @extend .card-title;
+        /*Aquí se aplica extend*/
+        @include tamanio(12px);
+        /*Aquí se usa un mixin*/
+        /*font-size: 13px;*/
+    }
+
+}
 
 /*Color extra:#1C94E5*/

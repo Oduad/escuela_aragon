@@ -8,21 +8,37 @@
     font-size: $font_s;
 }
 
+.alturaPl {
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    /*Aquí se usan variables*/
+    height: 80vh;
+    text-align: center;
+}
+
 .logo_plantel {
-    @include tamanio(180px, 140px);             /*aquí se usa un mixin*/
+    @include tamanio(180px, 140px);
+    /*aquí se usa un mixin*/
     /*width: 180px;
     height: 140px;*/
-    margin: 15px;
     animation-duration: 2s;
+    cursor: pointer;
 }
 
 #letras_div1_pl {
-    @include tamanletras(35px);                 /*Aquí se usa un mixin*/
+    @include tamanletras(35px);
+    /*Aquí se usa un mixin*/
     /*font-size: 35px;*/
     color: $header_deg2;
     animation-name: lDiv1Of1;
     animation-duration: 2s;
     padding: 60px;
+}
+
+.color_col_pl {
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    /*Aquí se usan variables*/
+    height: 70vh;
+    text-align: center;
 }
 
 /*A continuación un par de líneas de tiempo para animación a las letras*/
@@ -40,35 +56,95 @@
 
 .titulos_plantel {
     justify-content: center;
-    @include tamanletras(40px);                 /*Aquí se usa un mixin*/
+    @include tamanletras(40px);
+    /*Aquí se usa un mixin*/
     /*font-size: 40px;*/
     padding-top: 75px;
     padding-right: 25px;
     padding-left: 25px;
     padding-bottom: 30px;
-    color: $color_textos;                       /*Aquí se usa un mixin*/
+    color: $color_textos;
+    /*Aquí se usa un mixin*/
     text-align: center;
 }
 
 .texto_cajasPl {
     padding-right: 25px;
     padding-left: 25px;
-    @include tamanletras(16px);                 /*Aquí se usa un mixin*/
+    @include tamanletras(16px);
+    /*Aquí se usa un mixin*/
     /*font-size: 16px;*/
     text-align: center;
     color: black;
 }
 
 .plantelImgAulas {
-    @include tamanio(341px, 256px);             /*Aquí se usa un mixin*/
+    @include tamanio(341px, 256px);
+    /*Aquí se usa un mixin*/
     /*width: 290px;
     height: 300px;*/
     margin: 60px;
 }
 
 .plantelImgCrim {
-    @include tamanio(250px, 250px);             /*Aquí se usa un mixin*/
+    @include tamanio(250px, 250px);
+    /*Aquí se usa un mixin*/
     /*width: 290px;
     height: 300px;*/
     margin: 60px;
+}
+
+@media (max-width: 576px) {
+
+    .alturaPl {
+        height: 70vh;
+    }
+
+    .logo_plantel {
+        height: 91px;
+        width: 119px;
+        margin: 0;
+    }
+
+    #letras_div1_pl {
+        @include tamanioLetra(26px);
+    }
+
+    .color_col_pl {
+        height: 90vh;
+    }
+
+    .titulos_plantel {
+        @include tamanletras(24px);
+        /*Aquí se usa un mixin*/
+        /*font-size: 40px;*/
+        padding-top: 5px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .btn {
+        @include tamanletras(14px);
+    }
+
+    .plantelImgAulas {
+        @include tamanio(239px, 179px);
+        /*Aquí se usa un mixin*/
+        margin: 5px;
+    }
+
+    .plantelImgCrim {
+        @include tamanio(175px, 175px);
+        /*Aquí se usa un mixin*/
+        margin: 5px;
+    }
+
+    .texto_cajasPl {
+        padding-top: 25px;
+        padding-right: 25px;
+        padding-left: 25px;
+        @include tamanletras(12px);
+        /*Aquí se usa un mixin*/
+    }
+
 }

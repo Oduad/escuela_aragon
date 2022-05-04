@@ -1,4 +1,3 @@
-/*Elementos del main index Desktop*/
 @mixin tamanio($width, $height) {
     width: $width;
     height: $height;
@@ -8,10 +7,12 @@
     font-size: $font_si;
 }
 
+
 body {
     overflow-x: hidden;
 }
 
+/*Elementos del main index Desktop*/
 .h1_index{
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
     margin: 0;
@@ -32,8 +33,10 @@ body {
     text-align: center;
 }Falta modificar*/
 
-.arriba {
-    display: flex;
+.altura{
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    text-align: center;
+    height: 125vh;
 }
 
 .texto_mvv {
@@ -41,9 +44,21 @@ body {
     /*font-size: 36px;*/
     text-align: center;
     color: $color_texto_mvv; /*Aquí se usa una variable*/
-    margin-top: 25px;
+    padding: 40px;
     animation-name: divUnoIndex;
     animation-duration: 3s;
+}
+
+.logo_index_mvv {
+    height: 130px;
+    width: 170px;
+}
+
+.cut{
+    @include tamanioLetra(24px);
+    /*font-size: 16px;*/
+    color: $header_deg2; /*Aquí se usa una variable*/
+    padding: 0;
 }
 
 @keyframes divUnoIndex {
@@ -58,25 +73,13 @@ body {
     }
 }
 
-.logo_index_mvv {
-    height: 130px;
-    width: 170px;
-    margin: 15px;
-}
-
-.cut{
-    @include tamanioLetra(16px);
-    /*font-size: 16px;*/
-    color: $header_deg2; /*Aquí se usa una variable*/
-}
-
 .img_mvv {
     max-width: 60px;
 }
 
 #mission{
     color: #1C94E5;
-    @include tamanioLetra(18px);
+    @include tamanioLetra(20px);
     /*font-size: 18px;*/
 }
 
@@ -86,9 +89,11 @@ body {
 }/*Aquí se aplica el extend*/
 
 .caja1_index {
-    @include tamanioLetra(16px);
+    @include tamanioLetra(15px);
     /*font-size: 16px;*/
     text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .caja2_index,
@@ -107,7 +112,7 @@ body {
 
 .video_index {
     min-width: 95vw;
-    min-height: 85vh;
+    min-height: 75vh;
 }
 
 .img_estrellazul {
@@ -116,11 +121,77 @@ body {
 
 .h3_index{
     padding-top: 10px;
-    @include tamanioLetra(45px);
+    @include tamanioLetra(40px);
     /*font-size: 45px;*/
     color: red;
 }
 
 .h4_index{
+    @include tamanioLetra(22px);
     padding-bottom: 20px;
 }
+
+/*Elementos del main index Celphone*/
+@media (max-width: 576px){
+
+    .h1_index{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        @include tamanioLetra(20px);
+    }
+
+    .color_col{
+        height: 150vh;
+    }
+
+    .texto_mvv {
+        @include tamanioLetra(24px);
+        padding-top: 6px;
+    }
+
+    .logo_index_mvv {
+        height: 91px;
+        width: 119px;
+        margin: 0;
+    }
+
+    .altura{
+        height: 150vh;
+    }
+
+    .cut{
+        @include tamanioLetra(18px);
+    }
+    
+    .img_mvv {
+        max-width: 45px;
+    }
+    
+    #mission{
+        @include tamanioLetra(16px);
+    }
+
+    .caja1_index {
+        @include tamanioLetra(12px);
+    }
+
+    .video_index {
+        min-width: 95vw;
+        min-height: 60vh;
+    }
+
+    .img_estrellazul {
+        max-width: 60px;
+    }
+    
+    .h3_index{
+        padding-top: 6px;
+        @include tamanioLetra(28px);
+    }
+    
+    .h4_index{
+        padding-bottom: 20px;
+        @include tamanioLetra(18px);
+    }
+}
+
