@@ -115,6 +115,10 @@ body {
   animation-duration: 3s;
 }
 
+.row-index {
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+}
+
 .logo_index_mvv {
   height: 130px;
   width: 170px;
@@ -160,20 +164,21 @@ body {
 }
 
 /*Aquí se aplica el extend*/
-.div_video_index, .color_div5_index {
+.div_video_index {
   height: 95vh;
   text-align: center;
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   /*Aquí se usan variables*/
 }
 
-.color_div5_index {
-  /*Aquí se aplica el extend*/
-}
-
 .video_index {
   min-width: 95vw;
   min-height: 75vh;
+}
+
+.div-estrellas {
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+  /*Aquí se usan variables*/
 }
 
 .img_estrellazul {
@@ -234,14 +239,9 @@ body {
     font-size: 12px;
   }
 
-  .div_video_index, .color_div5_index {
+  .div_video_index {
     max-height: 85vh;
     text-align: center;
-    background-image: radial-gradient(white 15%, #D6EAF8 85%);
-    /*Aquí se usan variables*/
-  }
-
-  .div-estrellas {
     background-image: radial-gradient(white 15%, #D6EAF8 85%);
     /*Aquí se usan variables*/
   }
@@ -397,11 +397,11 @@ body {
   }
 
   .altura1 {
-    height: 80vh;
+    height: 70vh;
   }
 
   .color_col {
-    height: 40vh;
+    height: 35vh;
   }
 
   .ImagenesOferta {
@@ -409,6 +409,15 @@ body {
     height: 210px;
     /*Aquí aplicamos un mixin*/
     margin-top: 30px;
+  }
+
+  .ImagenesOferta:hover {
+    width: 224px;
+    height: 231px;
+    /*Aquí aplicamos un mixin*/
+    /*width: 340px;
+    height: 350px;*/
+    cursor: pointer;
   }
 
   .titulos_oferta {
