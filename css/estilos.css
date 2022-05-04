@@ -21,19 +21,23 @@ header {
 }
 
 .logo_header {
-  padding: 5px;
+  padding-left: 20px;
 }
 
-nav {
+.nav {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: center;
 }
 
+.navbar-nav {
+  padding-left: 10px;
+}
+
 .nav-link {
-  font-weight: 500;
-  font: red;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 ul li {
@@ -49,11 +53,29 @@ ul li a {
   max-width: 100px;
 }
 
-/*Elementos del main index Desktop*/
+@media (max-width: 576px) {
+  .navbar-toggler {
+    margin-right: 15px;
+  }
+
+  .navbar-nav {
+    margin-right: 15px;
+  }
+
+  .nav {
+    margin-right: 15px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+}
 body {
   overflow-x: hidden;
 }
 
+/*Elementos del main index Desktop*/
 .h1_index {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   /*Aquí se usan variables*/
@@ -76,8 +98,10 @@ body {
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
     text-align: center;
 }Falta modificar*/
-.arriba {
-  display: flex;
+.altura {
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+  text-align: center;
+  height: 125vh;
 }
 
 .texto_mvv {
@@ -86,9 +110,22 @@ body {
   text-align: center;
   color: gray;
   /*Aquí se usa una variable*/
-  margin-top: 25px;
+  padding: 40px;
   animation-name: divUnoIndex;
   animation-duration: 3s;
+}
+
+.logo_index_mvv {
+  height: 130px;
+  width: 170px;
+}
+
+.cut {
+  font-size: 24px;
+  /*font-size: 16px;*/
+  color: #52B6F9;
+  /*Aquí se usa una variable*/
+  padding: 0;
 }
 
 @keyframes divUnoIndex {
@@ -101,19 +138,6 @@ body {
     opacity: 1;
   }
 }
-.logo_index_mvv {
-  height: 130px;
-  width: 170px;
-  margin: 15px;
-}
-
-.cut {
-  font-size: 16px;
-  /*font-size: 16px;*/
-  color: #52B6F9;
-  /*Aquí se usa una variable*/
-}
-
 .img_mvv {
   max-width: 60px;
 }
@@ -121,16 +145,18 @@ body {
 #mission, #vission,
 #values {
   color: #1C94E5;
-  font-size: 18px;
+  font-size: 20px;
   /*font-size: 18px;*/
 }
 
 /*Aquí se aplica el extend*/
 .caja1_index, .caja2_index,
 .caja3_index {
-  font-size: 16px;
+  font-size: 15px;
   /*font-size: 16px;*/
   text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /*Aquí se aplica el extend*/
@@ -146,7 +172,7 @@ body {
 
 .video_index {
   min-width: 95vw;
-  min-height: 85vh;
+  min-height: 75vh;
 }
 
 .img_estrellazul {
@@ -155,15 +181,80 @@ body {
 
 .h3_index {
   padding-top: 10px;
-  font-size: 45px;
+  font-size: 40px;
   /*font-size: 45px;*/
   color: red;
 }
 
 .h4_index {
+  font-size: 22px;
   padding-bottom: 20px;
 }
 
+/*Elementos del main index Celphone*/
+@media (max-width: 576px) {
+  .h1_index {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 20px;
+  }
+
+  .color_col {
+    height: 150vh;
+  }
+
+  .texto_mvv {
+    font-size: 24px;
+    padding-top: 6px;
+  }
+
+  .logo_index_mvv {
+    height: 91px;
+    width: 119px;
+    margin: 0;
+  }
+
+  .altura {
+    height: 150vh;
+  }
+
+  .cut {
+    font-size: 18px;
+  }
+
+  .img_mvv {
+    max-width: 45px;
+  }
+
+  #mission, #vission,
+#values {
+    font-size: 16px;
+  }
+
+  .caja1_index, .caja2_index,
+.caja3_index {
+    font-size: 12px;
+  }
+
+  .video_index {
+    min-width: 95vw;
+    min-height: 60vh;
+  }
+
+  .img_estrellazul {
+    max-width: 60px;
+  }
+
+  .h3_index {
+    padding-top: 6px;
+    font-size: 28px;
+  }
+
+  .h4_index {
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+}
 /*Elementos del main de oferta Desktop*/
 .logo_oferta {
   width: 180px;
@@ -171,7 +262,6 @@ body {
   /*Aquí aplicamos un mixin*/
   /*width: 180px;
   height: 140px;*/
-  margin: 15px;
   animation-duration: 2s;
   cursor: pointer;
 }
@@ -183,8 +273,8 @@ body {
   color: red;
   animation-name: lDiv1Of1;
   animation-duration: 2s;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-top: 35px;
+  padding-left: 20px;
 }
 
 #letras_div_of2 {
@@ -221,17 +311,17 @@ body {
     transform: translate(0);
   }
 }
-.altura_row_oferta {
-  height: 67vh;
-}
-
 .altura1 {
-  height: 87vh;
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+  /*Aquí se usan variables*/
+  height: 100vh;
+  text-align: center;
 }
 
 .color_col {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   /*Aquí se usan variables*/
+  height: 70vh;
   text-align: center;
 }
 
@@ -286,15 +376,59 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 576px) {
+  .logo_oferta {
+    height: 91px;
+    width: 119px;
+    margin: 0;
+  }
+
+  #letras_div_of1, #letras_div_of2 {
+    font-size: 16px;
+  }
+
+  #letras_div_of2 {
+    font-size: 30px;
+  }
+
+  .altura1 {
+    height: 60vh;
+  }
+
+  .color_col {
+    height: 65vh;
+  }
+
+  .titulos_oferta {
+    font-size: 24px;
+    /*Aquí aplicamos un mixin*/
+    /*font-size: 40px;*/
+    padding-top: 75px;
+    padding-bottom: 30px;
+  }
+
+  .texto_cajas {
+    font-size: 12px;
+    /*Aquí aplicamos un mixin*/
+    /*font-size: 16px;*/
+  }
+}
 /*Elementos del main plantel Desktop*/
+.alturaPl {
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+  /*Aquí se usan variables*/
+  height: 80vh;
+  text-align: center;
+}
+
 .logo_plantel {
   width: 180px;
   height: 140px;
   /*aquí se usa un mixin*/
   /*width: 180px;
   height: 140px;*/
-  margin: 15px;
   animation-duration: 2s;
+  cursor: pointer;
 }
 
 #letras_div1_pl {
@@ -305,6 +439,13 @@ body {
   animation-name: lDiv1Of1;
   animation-duration: 2s;
   padding: 60px;
+}
+
+.color_col_pl {
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+  /*Aquí se usan variables*/
+  height: 70vh;
+  text-align: center;
 }
 
 /*A continuación un par de líneas de tiempo para animación a las letras*/
@@ -360,6 +501,60 @@ body {
   margin: 60px;
 }
 
+@media (max-width: 576px) {
+  .alturaPl {
+    height: 70vh;
+  }
+
+  .logo_plantel {
+    height: 91px;
+    width: 119px;
+    margin: 0;
+  }
+
+  #letras_div1_pl {
+    font-size: 26px;
+  }
+
+  .color_col_pl {
+    height: 90vh;
+  }
+
+  .titulos_plantel {
+    font-size: 24px;
+    /*Aquí se usa un mixin*/
+    /*font-size: 40px;*/
+    padding-top: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .plantelImgAulas {
+    width: 239px;
+    height: 179px;
+    /*Aquí se usa un mixin*/
+    margin: 5px;
+  }
+
+  .plantelImgCrim {
+    width: 175px;
+    height: 175px;
+    /*Aquí se usa un mixin*/
+    margin: 5px;
+  }
+
+  .texto_cajasPl {
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 12px;
+    /*Aquí se usa un mixin*/
+  }
+}
 /*Elementos del main de beca Desktop*/
 .formBeca {
   padding-top: 40px;
@@ -377,6 +572,7 @@ body {
   text-align: center;
   color: #52B6F9;
   /*Aquí se usa una variable*/
+  font-size: 38px;
 }
 
 .becaN {
@@ -397,6 +593,20 @@ body {
   color: red;
 }
 
+@media (max-width: 576px) {
+  .formBeca {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    /*Aquí se us mixin*/
+  }
+
+  .h1_beca {
+    font-size: 20px;
+  }
+}
 .color_cont_al {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   padding: 35px;
@@ -425,6 +635,20 @@ body {
   padding-bottom: 0px;
 }
 
+div .col {
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .h1_alumnos {
+    padding: 4px;
+    font-size: 26px;
+  }
+
+  div .col-12 {
+    font-size: 12px;
+  }
+}
 .contactoMapa {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   /*Aquí se usan variables*/
@@ -465,7 +689,7 @@ iframe {
   font-size: 14px;
   /*Aquí se usa un mixin*/
   /*font-size: 14px;*/
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .card-text {
@@ -475,6 +699,23 @@ iframe {
   /*font-size: 13px;*/
 }
 
+@media (max-width: 576px) {
+  .card-title, .card-text {
+    color: #0598FE;
+    text-align: center;
+    /*Aquí se usa un mixin*/
+    font-size: 13px;
+    /*Aquí se usa un mixin*/
+    font-weight: 500;
+  }
+
+  .card-text {
+    /*Aquí se aplica extend*/
+    font-size: 12px;
+    /*Aquí se usa un mixin*/
+    /*font-size: 13px;*/
+  }
+}
 /*Color extra:#1C94E5*/
 /*Elementos del footer Desktop (Aplica para todas las páginas del sitio)*/
 .imagen_footer {
