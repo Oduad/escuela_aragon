@@ -136,14 +136,15 @@ body {
 /*Elementos del main index Celphone*/
 @media (max-width: 576px){
 
+
+    .div-general{
+        background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    }
+
     .h1_index{
         padding-top: 4px;
         padding-bottom: 4px;
         @include tamanioLetra(20px);
-    }
-
-    .color_col{
-        height: 150vh;
     }
 
     .texto_mvv {
@@ -157,9 +158,6 @@ body {
         margin: 0;
     }
 
-    .altura{
-        height: 80vh;
-    }
 
     .cut{
         @include tamanioLetra(18px);
@@ -178,15 +176,13 @@ body {
     }
 
     .div_video_index {
-        height: 70vh;
+        max-height: 85vh;
         text-align: center;
         background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
-    
     }
 
-    .video_index {
-        min-width: 95vw;
-        min-height: 60vh;
+    .div-estrellas{
+        background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
     }
 
     .img_estrellazul {
