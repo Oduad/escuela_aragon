@@ -135,16 +135,23 @@
     }
 
     .altura1{
-        height: 80vh;
+        height: 70vh;
     }
 
     .color_col{
-        height: 40vh;
+        height: 35vh;
     }
 
     .ImagenesOferta {
         @include tamanio(203px, 210px);                  /*Aquí aplicamos un mixin*/
         margin-top: 30px;
+    }
+
+    .ImagenesOferta:hover {
+        @include tamanio(224px, 231px);                  /*Aquí aplicamos un mixin*/
+        /*width: 340px;
+        height: 350px;*/
+        cursor: pointer;
     }
 
     .titulos_oferta {

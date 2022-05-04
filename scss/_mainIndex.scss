@@ -11,10 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-.div-general{
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
-}
-
 /*Elementos del main index Desktop*/
 .h1_index{
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
@@ -50,6 +46,10 @@ body {
     padding: 40px;
     animation-name: divUnoIndex;
     animation-duration: 3s;
+}
+
+.row-index{
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
 }
 
 .logo_index_mvv {
@@ -108,12 +108,7 @@ body {
     height: 95vh;
     text-align: center;
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
-
 }
-
-.color_div5_index {
-    @extend .div_video_index; /*Aquí se aplica el extend*/
-}  
 
 .video_index {
     min-width: 95vw;
@@ -147,7 +142,7 @@ body {
     }
 
     .h1_index{
-        padding-top: 4px;
+        padding-top: 4px; 
         padding-bottom: 4px;
         @include tamanioLetra(20px);
     }
