@@ -7,9 +7,12 @@
     font-size: $font_si;
 }
 
-
 body {
     overflow-x: hidden;
+}
+
+.div-general{
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
 }
 
 /*Elementos del main index Desktop*/
@@ -117,6 +120,10 @@ body {
     min-height: 75vh;
 }
 
+.div-estrellas{
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+}
+
 .img_estrellazul {
     max-width: 80px;
 }
@@ -135,8 +142,6 @@ body {
 
 /*Elementos del main index Celphone*/
 @media (max-width: 576px){
-
-
     .div-general{
         background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
     }
@@ -178,10 +183,6 @@ body {
     .div_video_index {
         max-height: 85vh;
         text-align: center;
-        background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
-    }
-
-    .div-estrellas{
         background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
     }
 
