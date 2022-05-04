@@ -102,8 +102,10 @@ body {
 }/*Aquí se aplica el extend*/
 
 .div_video_index {
+    height: 95vh;
     text-align: center;
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+
 }
 
 .color_div5_index {
@@ -173,6 +175,13 @@ body {
 
     .caja1_index {
         @include tamanioLetra(12px);
+    }
+
+    .div_video_index {
+        height: 70vh;
+        text-align: center;
+        background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    
     }
 
     .video_index {
