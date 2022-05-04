@@ -392,11 +392,18 @@ body {
   }
 
   .altura1 {
-    height: 60vh;
+    height: 80vh;
   }
 
   .color_col {
-    height: 65vh;
+    height: 58vh;
+  }
+
+  .ImagenesOferta {
+    width: 203px;
+    height: 210px;
+    /*Aquí aplicamos un mixin*/
+    margin-top: 30px;
   }
 
   .titulos_oferta {
