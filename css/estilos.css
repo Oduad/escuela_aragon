@@ -161,6 +161,7 @@ body {
 
 /*Aquí se aplica el extend*/
 .div_video_index, .color_div5_index {
+  height: 95vh;
   text-align: center;
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   /*Aquí se usan variables*/
@@ -193,14 +194,15 @@ body {
 
 /*Elementos del main index Celphone*/
 @media (max-width: 576px) {
+  .div-general {
+    background-image: radial-gradient(white 15%, #D6EAF8 85%);
+    /*Aquí se usan variables*/
+  }
+
   .h1_index {
     padding-top: 4px;
     padding-bottom: 4px;
     font-size: 20px;
-  }
-
-  .color_col {
-    height: 150vh;
   }
 
   .texto_mvv {
@@ -212,10 +214,6 @@ body {
     height: 91px;
     width: 119px;
     margin: 0;
-  }
-
-  .altura {
-    height: 150vh;
   }
 
   .cut {
@@ -236,9 +234,16 @@ body {
     font-size: 12px;
   }
 
-  .video_index {
-    min-width: 95vw;
-    min-height: 60vh;
+  .div_video_index, .color_div5_index {
+    max-height: 85vh;
+    text-align: center;
+    background-image: radial-gradient(white 15%, #D6EAF8 85%);
+    /*Aquí se usan variables*/
+  }
+
+  .div-estrellas {
+    background-image: radial-gradient(white 15%, #D6EAF8 85%);
+    /*Aquí se usan variables*/
   }
 
   .img_estrellazul {
@@ -396,7 +401,7 @@ body {
   }
 
   .color_col {
-    height: 58vh;
+    height: 40vh;
   }
 
   .ImagenesOferta {
