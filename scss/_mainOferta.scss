@@ -72,8 +72,28 @@
 
 .color_col {
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
-    height: 70vh;
+    height: 80vh;
     text-align: center;
+}
+
+.color_col2 {
+    
+    text-align: center;
+}
+
+.color_col_p {
+    background-image: radial-gradient(red 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    height: 80vh;
+    text-align: center;
+}
+
+.btn-primary:hover{
+    background-color: cornflowerblue;
+    color: black;
+    height: 32px;
+    width: 110px;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .texto_oferta { /*Corresponde a líneas comentadas*/
@@ -87,7 +107,7 @@
 
 .titulos_oferta {
     justify-content: center;
-    @include tamLetra(40px);                         /*Aquí aplicamos un mixin*/
+    @include tamLetra(30px);                         /*Aquí aplicamos un mixin*/
     /*font-size: 40px;*/
     padding-top: 75px;
     padding-right: 25px;
@@ -97,10 +117,11 @@
 }
 
 .texto_cajas {
-    padding-right: 25px;
-    padding-left: 25px;
-    @include tamLetra(16px);                         /*Aquí aplicamos un mixin*/
+    padding-right: 35px;
+    padding-left: 35px;
+    @include tamLetra(15px);                         /*Aquí aplicamos un mixin*/
     /*font-size: 16px;*/
+    text-align: justify;
 }
 
 .ImagenesOferta {
@@ -109,6 +130,7 @@
     height: 300px;*/
     transition: width 1s, height 1s;
     margin-top: 60px;
+    text-align: center;
 }
 
 .ImagenesOferta:hover {
@@ -116,6 +138,11 @@
     /*width: 340px;
     height: 350px;*/
     cursor: pointer;
+}
+
+iframe {
+    width: 200px;
+    height: 50px; 
 }
 
 @media (max-width: 576px){
@@ -135,34 +162,39 @@
     }
 
     .altura1{
-        height: 70vh;
+        height: 80vh;
     }
 
     .color_col{
-        height: 35vh;
+        height: 70vh;
+        padding-top: 10px;
+    }
+
+    .color_col2{
+        height: 45vh;
     }
 
     .ImagenesOferta {
         @include tamanio(203px, 210px);                  /*Aquí aplicamos un mixin*/
         margin-top: 30px;
+        text-align: center;
     }
 
     .ImagenesOferta:hover {
-        @include tamanio(224px, 231px);                  /*Aquí aplicamos un mixin*/
-        /*width: 340px;
-        height: 350px;*/
-        cursor: pointer;
+        @include tamanio(223px, 231px);                  /*Aquí aplicamos un mixin*/
+        margin-top: 30px;
+        text-align: center;
     }
 
     .titulos_oferta {
         @include tamLetra(24px);                         /*Aquí aplicamos un mixin*/
         /*font-size: 40px;*/
-        padding-top: 75px;
+        padding-top: 25px;
         padding-bottom: 30px;
     }
 
     .texto_cajas {
-        @include tamLetra(12px);                         /*Aquí aplicamos un mixin*/
+        @include tamLetra(13px);                         /*Aquí aplicamos un mixin*/
         /*font-size: 16px;*/
     }
 

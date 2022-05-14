@@ -21,9 +21,44 @@
     padding-bottom: 100px;
 }
 
+.color_col_alumno {
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.altura_row_alumno1 {
+    height: 50vh;
+    padding-top: 30px;
+}
+
+.altura_row_alumno2 {
+    height: 60vh;
+    padding-top: 90px;
+}
+
 .btn {
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.bt:hover {
+    background-color: cornflowerblue;
+    color: black;
+    height: 32px;
+    width: 130px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.img_Alumnos1 {
+    width: 300px;
+    height: 225px;
+}
+
+.img_Alumnos2 {
+    width: 338px;
+    height: 225px;
 }
 
 div {
@@ -42,6 +77,42 @@ div {
         .col-12 {
             font-size: 12px;
         }
+    }
+
+    .altura_row_alumno1 {
+        height: 110vh;
+        padding-top: 10px;
+    }
+    
+    .altura_row_alumno2 {
+        height: 90vh;
+        padding-top: 90px;
+    }
+
+    .imgModulos1 {
+        width: 239px;
+        height: 137px;
+    }
+
+    .imgModulos2 {
+        padding-top: 20px;
+        width: 162px;
+        height: 173px;
+    }
+
+    .imgModulos3 {
+        width: 239px;
+        height: 137px;
+    }
+
+    .img_Alumnos1 {
+        width: 210px;
+        height: 158px;
+    }
+    
+    .img_Alumnos2 {
+        width: 237px;
+        height: 158px;
     }
 
 }

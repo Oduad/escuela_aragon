@@ -10,6 +10,18 @@
     color: black;
 }
 
-.text-dark{
+.text-dark {
     font-size: 15px;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .imagen_footer {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .imagen_footer {
+        max-width: 190px;
+    }
 }
