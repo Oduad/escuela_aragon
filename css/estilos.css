@@ -6,11 +6,17 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/*Elementos del header Desktop (Aplica para todas las páginas del sitio)*/
 header {
   display: flex;
   flex-flow: column nowrap;
   min-width: 100vw;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
 }
 
 .color_header {
@@ -22,13 +28,14 @@ header {
 
 .logo_header {
   padding-left: 20px;
+  max-width: 85px;
+  min-height: 55px;
 }
 
-.nav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: center;
+.logo_header:hover {
+  cursor: pointer;
+  max-width: 100px;
+  min-height: 65px;
 }
 
 .navbar-nav {
@@ -37,23 +44,43 @@ header {
 
 .nav-link {
   font-weight: 400;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  font-weight: 600;
   font-size: 20px;
 }
 
-ul li {
-  font: green;
-}
 ul li a {
   font-size: 20px;
   background-color: #52B6F9;
   /*Aquí se usa una variable*/
 }
 
-.logo_header {
-  max-width: 100px;
-}
+@media (min-width: 577px) and (max-width: 768px) {
+  .navbar-toggler {
+    margin-right: 15px;
+  }
 
+  .nav-link {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+
+  .logo_header {
+    padding-left: 20px;
+    max-width: 80px;
+    min-height: 50px;
+  }
+}
 @media (max-width: 576px) {
+  .logo_header {
+    padding-left: 20px;
+    max-width: 75px;
+    min-height: 45px;
+  }
+
   .navbar-toggler {
     margin-right: 15px;
   }
@@ -67,8 +94,13 @@ ul li a {
   }
 
   .nav-link {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 15px;
+  }
+
+  .nav-link:hover {
+    font-weight: 500;
+    font-size: 16px;
   }
 }
 body {
@@ -89,19 +121,21 @@ body {
   /*Aquí se usa una variable*/
 }
 
-.foto_tour {
-  /*Corresponde a líneas comentadas(en espera)*/
-  max-width: 30vw;
+h1 {
+  font-weight: 650;
 }
 
 /*.colordiv{ 
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
     text-align: center;
 }Falta modificar*/
-.altura {
+/*.altura {
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    text-align: center;
+    height: 125vh;
+}*/
+.row-index {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  text-align: center;
-  height: 125vh;
 }
 
 .texto_mvv {
@@ -113,12 +147,23 @@ body {
   padding: 40px;
   animation-name: divUnoIndex;
   animation-duration: 3s;
+  font-weight: 600;
+}
+.texto_mvv b {
+  color: #1C94E5;
+  font-weight: 650;
 }
 
-.row-index {
-  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+@keyframes divUnoIndex {
+  from {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
-
 .logo_index_mvv {
   height: 130px;
   width: 170px;
@@ -132,24 +177,19 @@ body {
   padding: 0;
 }
 
-@keyframes divUnoIndex {
-  from {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 .img_mvv {
   max-width: 60px;
+}
+
+.img_mvv:hover {
+  cursor: pointer;
+  max-width: 70px;
 }
 
 #mission, #vission,
 #values {
   color: #1C94E5;
-  font-size: 20px;
+  font-size: 22px;
   /*font-size: 18px;*/
 }
 
@@ -172,7 +212,7 @@ body {
 }
 
 .video_index {
-  min-width: 95vw;
+  min-width: 95vh;
   min-height: 75vh;
 }
 
@@ -185,11 +225,17 @@ body {
   max-width: 80px;
 }
 
+.img_estrellazul:hover {
+  max-width: 90px;
+  cursor: pointer;
+}
+
 .h3_index {
   padding-top: 10px;
   font-size: 40px;
   /*font-size: 45px;*/
   color: red;
+  font-weight: 700;
 }
 
 .h4_index {
@@ -197,6 +243,68 @@ body {
   padding-bottom: 20px;
 }
 
+/*Elementos del main index Tablet*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .h1_index {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 36px;
+  }
+
+  h1 {
+    font-weight: 600;
+  }
+
+  .texto_mvv {
+    font-size: 32px;
+    padding-top: 6px;
+    font-weight: 500;
+  }
+  .texto_mvv b {
+    color: #1C94E5;
+    font-weight: 550;
+  }
+
+  .logo_index_mvv {
+    height: 111px;
+    width: 145px;
+    margin: 0;
+  }
+
+  .cut {
+    font-size: 22px;
+  }
+
+  .img_mvv {
+    max-width: 55px;
+  }
+
+  #mission, #vission,
+#values {
+    font-size: 20px;
+  }
+
+  .caja1_index, .caja2_index,
+.caja3_index {
+    font-size: 14px;
+  }
+
+  .div_video_index {
+    max-height: 90vh;
+    text-align: center;
+    background-image: radial-gradient(white 15%, #D6EAF8 85%);
+    /*Aquí se usan variables*/
+  }
+
+  .h3_index {
+    font-size: 38px;
+  }
+
+  .h4_index {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+}
 /*Elementos del main index Celphone*/
 @media (max-width: 576px) {
   .div-general {
@@ -207,12 +315,21 @@ body {
   .h1_index {
     padding-top: 4px;
     padding-bottom: 4px;
-    font-size: 20px;
+    font-size: 32px;
+  }
+
+  h1 {
+    font-weight: 550;
   }
 
   .texto_mvv {
-    font-size: 24px;
+    font-size: 28px;
     padding-top: 6px;
+    font-weight: 450;
+  }
+  .texto_mvv b {
+    color: #1C94E5;
+    font-weight: 500;
   }
 
   .logo_index_mvv {
@@ -222,21 +339,21 @@ body {
   }
 
   .cut {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .img_mvv {
-    max-width: 45px;
+    max-width: 50px;
   }
 
   #mission, #vission,
 #values {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .caja1_index, .caja2_index,
 .caja3_index {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .div_video_index {
@@ -246,13 +363,17 @@ body {
     /*Aquí se usan variables*/
   }
 
+  .video_index {
+    min-height: 65vh;
+  }
+
   .img_estrellazul {
     max-width: 60px;
   }
 
   .h3_index {
     padding-top: 6px;
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .h4_index {
@@ -326,8 +447,28 @@ body {
 .color_col {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   /*Aquí se usan variables*/
-  height: 70vh;
+  height: 80vh;
   text-align: center;
+}
+
+.color_col2 {
+  text-align: center;
+}
+
+.color_col_p {
+  background-image: radial-gradient(red 15%, #D6EAF8 85%);
+  /*Aquí se usan variables*/
+  height: 80vh;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: cornflowerblue;
+  color: black;
+  height: 32px;
+  width: 110px;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .texto_oferta {
@@ -343,7 +484,7 @@ body {
 
 .titulos_oferta {
   justify-content: center;
-  font-size: 40px;
+  font-size: 30px;
   /*Aquí aplicamos un mixin*/
   /*font-size: 40px;*/
   padding-top: 75px;
@@ -355,11 +496,12 @@ body {
 }
 
 .texto_cajas {
-  padding-right: 25px;
-  padding-left: 25px;
-  font-size: 16px;
+  padding-right: 35px;
+  padding-left: 35px;
+  font-size: 15px;
   /*Aquí aplicamos un mixin*/
   /*font-size: 16px;*/
+  text-align: justify;
 }
 
 .ImagenesOferta {
@@ -370,6 +512,7 @@ body {
   height: 300px;*/
   transition: width 1s, height 1s;
   margin-top: 60px;
+  text-align: center;
 }
 
 .ImagenesOferta:hover {
@@ -379,6 +522,11 @@ body {
   /*width: 340px;
   height: 350px;*/
   cursor: pointer;
+}
+
+iframe {
+  width: 200px;
+  height: 50px;
 }
 
 @media (max-width: 576px) {
@@ -397,11 +545,16 @@ body {
   }
 
   .altura1 {
-    height: 70vh;
+    height: 80vh;
   }
 
   .color_col {
-    height: 35vh;
+    height: 70vh;
+    padding-top: 10px;
+  }
+
+  .color_col2 {
+    height: 45vh;
   }
 
   .ImagenesOferta {
@@ -409,27 +562,27 @@ body {
     height: 210px;
     /*Aquí aplicamos un mixin*/
     margin-top: 30px;
+    text-align: center;
   }
 
   .ImagenesOferta:hover {
-    width: 224px;
+    width: 223px;
     height: 231px;
     /*Aquí aplicamos un mixin*/
-    /*width: 340px;
-    height: 350px;*/
-    cursor: pointer;
+    margin-top: 30px;
+    text-align: center;
   }
 
   .titulos_oferta {
     font-size: 24px;
     /*Aquí aplicamos un mixin*/
     /*font-size: 40px;*/
-    padding-top: 75px;
+    padding-top: 25px;
     padding-bottom: 30px;
   }
 
   .texto_cajas {
-    font-size: 12px;
+    font-size: 13px;
     /*Aquí aplicamos un mixin*/
     /*font-size: 16px;*/
   }
@@ -505,8 +658,17 @@ body {
 }
 
 .plantelImgAulas {
-  width: 341px;
-  height: 256px;
+  width: 384px;
+  height: 288px;
+  /*Aquí se usa un mixin*/
+  /*width: 290px;
+  height: 300px;*/
+  margin: 60px;
+}
+
+.plantelImgMec {
+  width: 384px;
+  height: 288px;
   /*Aquí se usa un mixin*/
   /*width: 290px;
   height: 300px;*/
@@ -514,12 +676,16 @@ body {
 }
 
 .plantelImgCrim {
-  width: 250px;
-  height: 250px;
+  width: 216px;
+  height: 288px;
   /*Aquí se usa un mixin*/
   /*width: 290px;
   height: 300px;*/
   margin: 60px;
+}
+
+.modal-title {
+  text-align: center;
 }
 
 @media (max-width: 576px) {
@@ -534,7 +700,7 @@ body {
   }
 
   #letras_div1_pl {
-    font-size: 26px;
+    font-size: 27px;
   }
 
   .color_col_pl {
@@ -561,7 +727,7 @@ body {
     margin: 5px;
   }
 
-  .plantelImgCrim {
+  .plantelImgMec {
     width: 175px;
     height: 175px;
     /*Aquí se usa un mixin*/
@@ -574,6 +740,34 @@ body {
     padding-left: 25px;
     font-size: 12px;
     /*Aquí se usa un mixin*/
+  }
+
+  .plantelImgAulas {
+    width: 230px;
+    height: 173px;
+    /*Aquí se usa un mixin*/
+    /*width: 290px;
+    height: 300px;*/
+    margin: 30px;
+    text-align: center;
+  }
+
+  .plantelImgMec {
+    width: 230px;
+    height: 173px;
+    /*Aquí se usa un mixin*/
+    /*width: 290px;
+    height: 300px;*/
+    margin: 30px;
+  }
+
+  .plantelImgCrim {
+    width: 130px;
+    height: 173px;
+    /*Aquí se usa un mixin*/
+    /*width: 290px;
+    height: 300px;*/
+    margin: 30px;
   }
 }
 /*Elementos del main de beca Desktop*/
@@ -651,9 +845,44 @@ body {
   padding-bottom: 100px;
 }
 
+.color_col_alumno {
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+.altura_row_alumno1 {
+  height: 50vh;
+  padding-top: 30px;
+}
+
+.altura_row_alumno2 {
+  height: 60vh;
+  padding-top: 90px;
+}
+
 .btn {
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.bt:hover {
+  background-color: cornflowerblue;
+  color: black;
+  height: 32px;
+  width: 130px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.img_Alumnos1 {
+  width: 300px;
+  height: 225px;
+}
+
+.img_Alumnos2 {
+  width: 338px;
+  height: 225px;
 }
 
 div .col {
@@ -668,6 +897,42 @@ div .col {
 
   div .col-12 {
     font-size: 12px;
+  }
+
+  .altura_row_alumno1 {
+    height: 110vh;
+    padding-top: 10px;
+  }
+
+  .altura_row_alumno2 {
+    height: 90vh;
+    padding-top: 90px;
+  }
+
+  .imgModulos1 {
+    width: 239px;
+    height: 137px;
+  }
+
+  .imgModulos2 {
+    padding-top: 20px;
+    width: 162px;
+    height: 173px;
+  }
+
+  .imgModulos3 {
+    width: 239px;
+    height: 137px;
+  }
+
+  .img_Alumnos1 {
+    width: 210px;
+    height: 158px;
+  }
+
+  .img_Alumnos2 {
+    width: 237px;
+    height: 158px;
   }
 }
 .contactoMapa {
@@ -751,6 +1016,17 @@ iframe {
 
 .text-dark {
   font-size: 15px;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .imagen_footer {
+    max-width: 220px;
+  }
+}
+@media (max-width: 576px) {
+  .imagen_footer {
+    max-width: 190px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
