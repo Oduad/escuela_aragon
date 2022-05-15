@@ -94,7 +94,7 @@ ul li a {
   }
 
   .nav-link {
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 15px;
   }
 
@@ -353,7 +353,7 @@ h1 {
 
   .caja1_index, .caja2_index,
 .caja3_index {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .div_video_index {
@@ -545,16 +545,16 @@ iframe {
   }
 
   .altura1 {
-    height: 80vh;
+    height: 50vh;
   }
 
   .color_col {
-    height: 70vh;
+    height: 50vh;
     padding-top: 10px;
   }
 
   .color_col2 {
-    height: 45vh;
+    height: 30vh;
   }
 
   .ImagenesOferta {
@@ -582,7 +582,7 @@ iframe {
   }
 
   .texto_cajas {
-    font-size: 13px;
+    font-size: 15px;
     /*Aquí aplicamos un mixin*/
     /*font-size: 16px;*/
   }
@@ -690,7 +690,7 @@ iframe {
 
 @media (max-width: 576px) {
   .alturaPl {
-    height: 70vh;
+    height: 50vh;
   }
 
   .logo_plantel {
@@ -704,7 +704,7 @@ iframe {
   }
 
   .color_col_pl {
-    height: 90vh;
+    height: 60vh;
   }
 
   .titulos_plantel {
@@ -738,7 +738,7 @@ iframe {
     padding-top: 25px;
     padding-right: 25px;
     padding-left: 25px;
-    font-size: 12px;
+    font-size: 15px;
     /*Aquí se usa un mixin*/
   }
 
@@ -814,7 +814,7 @@ iframe {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
-    font-size: 12px;
+    font-size: 15px;
     /*Aquí se us mixin*/
   }
 
@@ -896,7 +896,7 @@ div .col {
   }
 
   div .col-12 {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .altura_row_alumno1 {
@@ -990,14 +990,14 @@ iframe {
     color: #0598FE;
     text-align: center;
     /*Aquí se usa un mixin*/
-    font-size: 13px;
+    font-size: 15px;
     /*Aquí se usa un mixin*/
     font-weight: 500;
   }
 
   .card-text {
     /*Aquí se aplica extend*/
-    font-size: 12px;
+    font-size: 14px;
     /*Aquí se usa un mixin*/
     /*font-size: 13px;*/
   }
