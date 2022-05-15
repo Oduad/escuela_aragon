@@ -162,16 +162,16 @@ iframe {
     }
 
     .altura1{
-        height: 80vh;
+        height: 50vh;
     }
 
     .color_col{
-        height: 70vh;
+        height: 50vh;
         padding-top: 10px;
     }
 
     .color_col2{
-        height: 45vh;
+        height: 30vh;
     }
 
     .ImagenesOferta {
@@ -194,7 +194,7 @@ iframe {
     }
 
     .texto_cajas {
-        @include tamLetra(13px);                         /*Aquí aplicamos un mixin*/
+        @include tamLetra(15px);                         /*Aquí aplicamos un mixin*/
         /*font-size: 16px;*/
     }
 

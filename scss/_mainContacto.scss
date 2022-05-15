@@ -64,7 +64,7 @@ iframe {
         color: #0598FE;
         @include centrado(center);
         /*Aquí se usa un mixin*/
-        @include tamanio(13px);
+        @include tamanio(15px);
         /*Aquí se usa un mixin*/
         font-weight: 500;
     }
@@ -72,7 +72,7 @@ iframe {
     .card-text {
         @extend .card-title;
         /*Aquí se aplica extend*/
-        @include tamanio(12px);
+        @include tamanio(14px);
         /*Aquí se usa un mixin*/
         /*font-size: 13px;*/
     }
