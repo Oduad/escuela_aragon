@@ -107,43 +107,53 @@ body {
   overflow-x: hidden;
 }
 
-/*Elementos del main index Desktop*/
+/*Elementos del main index DESKTOP*/
 .h1_index {
+  /*Abajo se usan variables*/
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*Abajo se usa un mixin*/
   font-size: 40px;
-  /*font-size: 40px;*/
   text-align: center;
+  /*Abajo se usa una variable*/
   color: #52B6F9;
-  /*Aquí se usa una variable*/
 }
 
 h1 {
-  font-weight: 650;
+  font-weight: bold;
+  animation: tituloHome 6s;
 }
 
-/*.colordiv{ 
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    text-align: center;
-}Falta modificar*/
-/*.altura {
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    text-align: center;
-    height: 125vh;
-}*/
+@keyframes tituloHome {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .row-index {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
 }
 
 .texto_mvv {
+  /*Abajo se usa una variable*/
   font-size: 36px;
-  /*font-size: 36px;*/
   text-align: center;
+  /*Abajo se usa una variable*/
   color: gray;
-  /*Aquí se usa una variable*/
   padding: 40px;
   animation-name: divUnoIndex;
   animation-duration: 3s;
@@ -170,10 +180,9 @@ h1 {
 }
 
 .cut {
+  /*Abajo se usa una variable*/
   font-size: 24px;
-  /*font-size: 16px;*/
   color: #52B6F9;
-  /*Aquí se usa una variable*/
   padding: 0;
 }
 
@@ -189,39 +198,43 @@ h1 {
 #mission, #vission,
 #values {
   color: #1C94E5;
+  /*Abajo se usa una variable*/
   font-size: 22px;
-  /*font-size: 18px;*/
 }
 
-/*Aquí se aplica el extend*/
 .caja1_index, .caja2_index,
 .caja3_index {
+  /*Abajo se aplica el extend*/
   font-size: 15px;
-  /*font-size: 16px;*/
   text-align: center;
   padding-right: 10px;
   padding-left: 10px;
 }
 
-/*Aquí se aplica el extend*/
+.caja2_index,
+.caja3_index {
+  /*Abajo se aplica el extend*/
+}
+
 .div_video_index {
-  height: 95vh;
+  min-height: 100vh;
   text-align: center;
+  /*Abajo se usan variables*/
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
 }
 
 .video_index {
-  min-width: 95vh;
-  min-height: 75vh;
+  max-width: 70vh;
+  min-height: 95vh;
 }
 
 .div-estrellas {
+  /*Abajo se usan variables*/
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
 }
 
 .img_estrellazul {
+  padding-top: 20px;
   max-width: 80px;
 }
 
@@ -232,18 +245,19 @@ h1 {
 
 .h3_index {
   padding-top: 10px;
+  /*Abajo se usa una variable*/
   font-size: 40px;
-  /*font-size: 45px;*/
   color: red;
   font-weight: 700;
 }
 
 .h4_index {
+  /*Abajo se usa una variable*/
   font-size: 22px;
   padding-bottom: 20px;
 }
 
-/*Elementos del main index Tablet*/
+/*Elementos del main index TABLET*/
 @media (min-width: 577px) and (max-width: 768px) {
   .h1_index {
     padding-top: 8px;
@@ -251,18 +265,9 @@ h1 {
     font-size: 36px;
   }
 
-  h1 {
-    font-weight: 600;
-  }
-
   .texto_mvv {
     font-size: 32px;
-    padding-top: 6px;
-    font-weight: 500;
-  }
-  .texto_mvv b {
-    color: #1C94E5;
-    font-weight: 550;
+    padding-top: 15px;
   }
 
   .logo_index_mvv {
@@ -292,8 +297,8 @@ h1 {
   .div_video_index {
     max-height: 90vh;
     text-align: center;
+    /*Abajo se usan variables*/
     background-image: radial-gradient(white 15%, #D6EAF8 85%);
-    /*Aquí se usan variables*/
   }
 
   .h3_index {
@@ -305,31 +310,23 @@ h1 {
     padding-bottom: 20px;
   }
 }
-/*Elementos del main index Celphone*/
+/*Elementos del main index CELPHONE*/
 @media (max-width: 576px) {
   .div-general {
+    /*Abajo se usan variables*/
     background-image: radial-gradient(white 15%, #D6EAF8 85%);
-    /*Aquí se usan variables*/
   }
 
   .h1_index {
     padding-top: 4px;
     padding-bottom: 4px;
+    /*Abajo se usa una variable*/
     font-size: 32px;
-  }
-
-  h1 {
-    font-weight: 550;
   }
 
   .texto_mvv {
     font-size: 28px;
     padding-top: 6px;
-    font-weight: 450;
-  }
-  .texto_mvv b {
-    color: #1C94E5;
-    font-weight: 500;
   }
 
   .logo_index_mvv {
@@ -357,14 +354,14 @@ h1 {
   }
 
   .div_video_index {
-    max-height: 85vh;
+    max-height: 65vh;
     text-align: center;
+    /*Abajo se usan variables*/
     background-image: radial-gradient(white 15%, #D6EAF8 85%);
-    /*Aquí se usan variables*/
   }
 
   .video_index {
-    min-height: 65vh;
+    max-height: 60vh;
   }
 
   .img_estrellazul {
@@ -381,85 +378,110 @@ h1 {
     font-size: 18px;
   }
 }
-/*Elementos del main de oferta Desktop*/
+/*Elementos del main de oferta DESKTOP*/
+.altura1 {
+  /*Abajo se usan variables*/
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 .logo_oferta {
+  /*Abajo aplicamos un mixin*/
   width: 180px;
-  height: 140px;
-  /*Aquí aplicamos un mixin*/
-  /*width: 180px;
-  height: 140px;*/
+  height: 200px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   animation-duration: 2s;
   cursor: pointer;
 }
 
 #letras_div_of1, #letras_div_of2 {
-  font-size: 18px;
-  /*Aquí aplicamos un mixin*/
-  /*font-size: 18px;*/
+  /*Abajo aplicamos un mixin*/
+  font-size: 20px;
   color: red;
   animation-name: lDiv1Of1;
-  animation-duration: 2s;
-  padding-top: 35px;
+  animation-duration: 6s;
+  padding-top: 50px;
   padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 
 #letras_div_of2 {
-  /*Aquí aplicamos un extend*/
-  /*animation-duration: 2s;
-  padding-right: 15px;
-  padding-left: 15px;*/
-  animation-name: lDiv1Of2;
+  /*Abajo aplicamos un extend*/
+  /*Abajo aplicamos un mixin*/
   font-size: 50px;
-  /*Aquí aplicamos un mixin*/
-  /*font-size: 50px;*/
   color: #1C94E5;
-  padding-bottom: 20px;
+  animation-name: lDiv1Of2;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  font-weight: bold;
 }
 
 /*A continuación un par de líneas de tiempo*/
 @keyframes lDiv1Of1 {
-  from {
+  0% {
+    transform: translateX(1000px);
     opacity: 0;
-    transform: translate(-600px);
   }
-  to {
+  30% {
+    transform: translateX(0);
     opacity: 1;
-    transform: translate(0);
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes lDiv1Of2 {
-  from {
+  0% {
+    transform: translateX(1000px);
     opacity: 0;
-    transform: translate(600px);
   }
-  to {
+  30% {
+    transform: translateX(0);
     opacity: 1;
-    transform: translate(0);
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
-.altura1 {
-  background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
-  height: 100vh;
-  text-align: center;
-}
-
 .color_col {
+  /*Abajo se usan variables*/
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
-  height: 80vh;
   text-align: center;
+  padding: 30px;
 }
 
 .color_col2 {
+  /*Abajo se usan variables*/
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
   text-align: center;
+  padding: 30px;
 }
 
 .color_col_p {
+  /*Abajo se usan variables*/
   background-image: radial-gradient(red 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
   height: 80vh;
   text-align: center;
+}
+
+.btn-primary {
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 .btn-primary:hover {
@@ -477,50 +499,44 @@ h1 {
   padding-top: 35px;
   padding-bottom: 35px;
   color: gray;
+  /*Abajo se aplica un mixin*/
   font-size: 50px;
-  /*Aquí aplicamos un mixin*/
-  /*font-size: 50px;*/
 }
 
 .titulos_oferta {
   justify-content: center;
+  /*Abajo se aplica un mixin*/
   font-size: 30px;
-  /*Aquí aplicamos un mixin*/
-  /*font-size: 40px;*/
-  padding-top: 75px;
+  padding-top: 50px;
   padding-right: 25px;
   padding-left: 25px;
   padding-bottom: 30px;
+  /*Abajo se aplica un mixin*/
   color: cornflowerblue;
-  /*Aquí se usa una variable*/
 }
 
 .texto_cajas {
-  padding-right: 35px;
-  padding-left: 35px;
-  font-size: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
   /*Aquí aplicamos un mixin*/
-  /*font-size: 16px;*/
+  font-size: 15px;
   text-align: justify;
 }
 
 .ImagenesOferta {
+  /*Abajo se usa un mixin*/
   width: 290px;
   height: 300px;
-  /*Aquí aplicamos un mixin*/
-  /*width: 290px;
-  height: 300px;*/
   transition: width 1s, height 1s;
-  margin-top: 60px;
+  margin-top: 80px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
 .ImagenesOferta:hover {
+  /*Abajo aplicamos un mixin*/
   width: 320px;
   height: 330px;
-  /*Aquí aplicamos un mixin*/
-  /*width: 340px;
-  height: 350px;*/
   cursor: pointer;
 }
 
@@ -529,130 +545,215 @@ iframe {
   height: 50px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 577px) and (max-width: 768px) {
+  .altura1 {
+    /*Abajo se usan variables*/
+    background-image: radial-gradient(white 15%, #D6EAF8 85%);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
   .logo_oferta {
-    height: 91px;
-    width: 119px;
-    margin: 0;
+    /*Abajo aplicamos un mixin*/
+    width: 125px;
+    height: 160px;
+    padding-top: 40px;
   }
 
   #letras_div_of1, #letras_div_of2 {
-    font-size: 16px;
+    /*Abajo aplicamos un mixin*/
+    font-size: 18px;
+    padding-top: 40px;
+    padding-left: 20px;
   }
 
   #letras_div_of2 {
-    font-size: 30px;
+    /*Abajo aplicamos un mixin*/
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .texto_cajas {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .logo_oferta {
+    /*Abajo aplicamos un mixin*/
+    width: 70px;
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 1px;
   }
 
   .altura1 {
-    height: 50vh;
-  }
-
-  .color_col {
-    height: 50vh;
+    /*Abajo se usan variables*/
+    background-image: radial-gradient(white 15%, #D6EAF8 85%);
+    text-align: center;
     padding-top: 10px;
   }
 
-  .color_col2 {
-    height: 30vh;
+  #letras_div_of1, #letras_div_of2 {
+    /*Abajo aplicamos un mixin*/
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  #letras_div_of2 {
+    /*Abajo aplicamos un mixin*/
+    font-size: 30px;
+  }
+
+  .btn-primary {
+    padding-top: 20px;
+    padding-bottom: 80px;
   }
 
   .ImagenesOferta {
+    /*Abajo aplicamos un mixin*/
     width: 203px;
     height: 210px;
-    /*Aquí aplicamos un mixin*/
     margin-top: 30px;
     text-align: center;
   }
 
   .ImagenesOferta:hover {
+    /*Abajo aplicamos un mixin*/
     width: 223px;
     height: 231px;
-    /*Aquí aplicamos un mixin*/
     margin-top: 30px;
     text-align: center;
   }
 
+  .texto_cajas {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+  }
+
   .titulos_oferta {
+    /*Abajo aplicamos un mixin*/
     font-size: 24px;
-    /*Aquí aplicamos un mixin*/
-    /*font-size: 40px;*/
     padding-top: 25px;
     padding-bottom: 30px;
   }
 
   .texto_cajas {
+    /*Abajo aplicamos un mixin*/
     font-size: 15px;
-    /*Aquí aplicamos un mixin*/
-    /*font-size: 16px;*/
+  }
+
+  #letras_div_of1, #letras_div_of2 {
+    /*Abajo aplicamos un mixin*/
+    font-size: 14px;
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+  #letras_div_of2 {
+    /*Abajo aplicamos un mixin*/
+    font-size: 34px;
+    padding-top: 50px;
+    padding-bottom: 70px;
   }
 }
-/*Elementos del main plantel Desktop*/
+/*Elementos del main plantel DESKTOP*/
 .alturaPl {
+  /*Abajo se usan variables*/
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
-  height: 80vh;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo_plantel {
+  /*Abajo se usa un mixin*/
   width: 180px;
-  height: 140px;
-  /*aquí se usa un mixin*/
-  /*width: 180px;
-  height: 140px;*/
+  height: 200px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   animation-duration: 2s;
   cursor: pointer;
 }
 
-#letras_div1_pl {
-  font-size: 35px;
-  /*Aquí se usa un mixin*/
-  /*font-size: 35px;*/
+.letras_div1_pl {
+  /*Abajo se usó un mixin*/
+  font-size: 40px;
+  padding: 30px;
+  /*Abajo se usa una variable*/
   color: #52B6F9;
-  animation-name: lDiv1Of1;
-  animation-duration: 2s;
-  padding: 60px;
-}
-
-.color_col_pl {
-  background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
-  height: 70vh;
-  text-align: center;
+  animation-name: lDiv1PL;
+  animation-duration: 6s;
+  font-weight: bold;
 }
 
 /*A continuación un par de líneas de tiempo para animación a las letras*/
 @keyframes lDiv1PL {
-  from {
+  0% {
+    transform: translateX(1000px);
     opacity: 0;
-    transform: translate(-600px);
   }
-  to {
+  30% {
+    transform: translateX(0);
     opacity: 1;
-    transform: translate(0);
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
+.color_col_pl {
+  /*Abajo se usan variables*/
+  background-image: radial-gradient(white 15%, #D6EAF8 85%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.alt_plantel {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.alt_plantel2 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .titulos_plantel {
   justify-content: center;
-  font-size: 40px;
-  /*Aquí se usa un mixin*/
-  /*font-size: 40px;*/
-  padding-top: 75px;
-  padding-right: 25px;
-  padding-left: 25px;
-  padding-bottom: 30px;
+  /*Abajo se usa un mixin*/
+  font-size: 38px;
+  padding: 25px;
+  /*Abajo se usa un mixin*/
   color: cornflowerblue;
-  /*Aquí se usa un mixin*/
+  text-align: center;
+}
+
+.titulos_plantel3 {
+  justify-content: center;
+  /*Abajo se usa un mixin*/
+  font-size: 38px;
+  padding-top: 80px;
+  /*Abajo se usa una variable*/
+  color: cornflowerblue;
   text-align: center;
 }
 
 .texto_cajasPl {
   padding-right: 25px;
   padding-left: 25px;
+  /*Abajo se usa un mixin*/
   font-size: 16px;
-  /*Aquí se usa un mixin*/
-  /*font-size: 16px;*/
   text-align: center;
   color: black;
 }
@@ -660,138 +761,210 @@ iframe {
 .plantelImgAulas {
   width: 384px;
   height: 288px;
-  /*Aquí se usa un mixin*/
-  /*width: 290px;
-  height: 300px;*/
-  margin: 60px;
+  /*Arriba se usa un mixin*/
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .plantelImgMec {
   width: 384px;
   height: 288px;
-  /*Aquí se usa un mixin*/
-  /*width: 290px;
-  height: 300px;*/
-  margin: 60px;
+  /*Arriba se usa un mixin*/
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .plantelImgCrim {
   width: 216px;
   height: 288px;
-  /*Aquí se usa un mixin*/
-  /*width: 290px;
-  height: 300px;*/
-  margin: 60px;
+  /*Arriba se usa un mixin*/
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.modal-title {
-  text-align: center;
-}
-
-@media (max-width: 576px) {
-  .alturaPl {
-    height: 50vh;
-  }
-
+@media (min-width: 577px) and (max-width: 768px) {
   .logo_plantel {
-    height: 91px;
-    width: 119px;
-    margin: 0;
+    width: 125px;
+    height: 160px;
   }
 
-  #letras_div1_pl {
-    font-size: 27px;
-  }
-
-  .color_col_pl {
-    height: 60vh;
+  .letras_div1_pl {
+    font-size: 36px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .titulos_plantel {
-    font-size: 24px;
-    /*Aquí se usa un mixin*/
-    /*font-size: 40px;*/
-    padding-top: 5px;
-    padding-right: 25px;
-    padding-left: 25px;
+    font-size: 34px;
+    padding-top: 15px;
+  }
+
+  .titulos_plantel3 {
+    font-size: 34px;
+    padding-top: 15px;
+  }
+
+  .texto_cajasPl {
+    font-size: 15px;
+  }
+
+  .alt_plantel {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .alt_plantel2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .plantelImgAulas {
+    width: 307px;
+    height: 230px;
+    /*Arriba se usa un mixin*/
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .plantelImgMec {
+    width: 307px;
+    height: 230px;
+    /*Arriba se usa un mixin*/
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .plantelImgCrim {
+    width: 173px;
+    height: 230px;
+    /*Arriba se usa un mixin*/
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .alturaPl {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .logo_plantel {
+    width: 100px;
+    height: 140px;
+  }
+
+  .letras_div1_pl {
+    font-size: 30px;
+  }
+
+  .titulos_plantel {
+    font-size: 32px;
+  }
+
+  .titulos_plantel3 {
+    font-size: 32px;
+    padding-top: 20px;
   }
 
   .btn {
     font-size: 14px;
-  }
-
-  .plantelImgAulas {
-    width: 239px;
-    height: 179px;
-    /*Aquí se usa un mixin*/
-    margin: 5px;
-  }
-
-  .plantelImgMec {
-    width: 175px;
-    height: 175px;
-    /*Aquí se usa un mixin*/
-    margin: 5px;
+    padding-bottom: 5px;
   }
 
   .texto_cajasPl {
-    padding-top: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-    font-size: 15px;
-    /*Aquí se usa un mixin*/
+    font-size: 14px;
+  }
+
+  .color_col_pl {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .alt_plantel {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .alt_plantel2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .plantelImgAulas {
     width: 230px;
     height: 173px;
-    /*Aquí se usa un mixin*/
-    /*width: 290px;
-    height: 300px;*/
-    margin: 30px;
-    text-align: center;
+    /*Arriba se usa un mixin*/
   }
 
   .plantelImgMec {
     width: 230px;
     height: 173px;
-    /*Aquí se usa un mixin*/
-    /*width: 290px;
-    height: 300px;*/
-    margin: 30px;
+    /*Arriba se usa un mixin*/
   }
 
   .plantelImgCrim {
     width: 130px;
     height: 173px;
-    /*Aquí se usa un mixin*/
-    /*width: 290px;
-    height: 300px;*/
-    margin: 30px;
+    /*Arriba se usa un mixin*/
   }
 }
+/*Elementos del main index DESKTOP*/
 /*Elementos del main de beca Desktop*/
 .formBeca {
   padding-top: 40px;
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 40px;
+  /*Abajo se usa una variable*/
   font-size: 16px;
-  /*Aquí se us mixin*/
-  /*font-size: 16px;*/
+  /*Abajo se usan variables*/
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
-  /*Aquí se usan variables*/
 }
 
 .h1_beca {
   text-align: center;
+  /*Abajo se usa una variable*/
   color: #52B6F9;
-  /*Aquí se usa una variable*/
-  font-size: 38px;
+  font-size: 40px;
+  animation: tituloBeca 6s;
+  font-weight: bold;
 }
 
+@keyframes tituloBeca {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .becaN {
   font-weight: bold;
+  font-size: 16px;
+}
+
+.textoBeca {
+  font-size: 16px;
 }
 
 .textAreaBeca {
@@ -799,66 +972,115 @@ iframe {
 }
 
 .botonBeca {
-  font-size: 16px;
   /*Aquí se usa mixin*/
-  /*font-size: 16px;*/
+  font-size: 16px;
 }
 
 .asterisk {
   color: red;
 }
 
+/*Elementos del main index TABLET*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .formBeca {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    /*Abajo se usa mixin*/
+    font-size: 15px;
+  }
+
+  .h1_beca {
+    font-size: 36px;
+  }
+
+  .becaN {
+    font-size: 15px;
+  }
+
+  .textoBeca {
+    font-size: 15px;
+  }
+}
+/*Elementos del main index CELPHONE*/
 @media (max-width: 576px) {
   .formBeca {
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
-    font-size: 15px;
-    /*Aquí se us mixin*/
+    /*Abajo se usa un mixin*/
+    font-size: 14px;
   }
 
   .h1_beca {
-    font-size: 20px;
+    font-size: 32px;
+  }
+
+  .becaN {
+    font-size: 14px;
+  }
+
+  .textoBeca {
+    font-size: 14px;
   }
 }
+/*Elementos del main index DESKTOP*/
 .color_cont_al {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   padding: 35px;
   /*Aquí se usan variables*/
 }
 
-.h1_alumnos {
+.container-h1Alumnos {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
+}
+
+.h1_alumnos {
   /*Aquí se usan variables*/
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-size: 40px;
   text-align: center;
   color: #52B6F9;
   /*Aquí se usa una variable*/
+  font-weight: bold;
+  animation: tituloAlumnos 6s;
 }
 
-.col {
-  padding-top: 100px;
-  padding-bottom: 100px;
+@keyframes tituloAlumnos {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.col-12 {
+  font-size: 16px;
+}
+
+.galumyeg {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .color_col_alumno {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   padding-top: 40px;
-  padding-bottom: 100px;
-}
-
-.altura_row_alumno1 {
-  height: 50vh;
-  padding-top: 30px;
-}
-
-.altura_row_alumno2 {
-  height: 60vh;
-  padding-top: 90px;
+  padding-bottom: 40px;
 }
 
 .btn {
@@ -875,141 +1097,256 @@ iframe {
   font-weight: 500;
 }
 
+.bt2:hover {
+  background-color: cornflowerblue;
+  color: black;
+  height: 32px;
+  width: 90px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.imgModulos1 {
+  width: 239px;
+  height: 137px;
+}
+
+.imgModulos2 {
+  width: 130px;
+  height: 140px;
+}
+
+.imgModulos3 {
+  width: 239px;
+  height: 137px;
+}
+
 .img_Alumnos1 {
-  width: 300px;
-  height: 225px;
+  width: 302px;
+  height: 202px;
 }
 
 .img_Alumnos2 {
-  width: 338px;
-  height: 225px;
+  width: 302px;
+  height: 202px;
 }
 
 div .col {
   font-size: 16px;
 }
 
+/*Elementos del main index TABLET*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .h1_alumnos {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .col-12 {
+    font-size: 15px;
+  }
+
+  .imgModulos1 {
+    width: 215px;
+    height: 137px;
+  }
+
+  .imgModulos2 {
+    padding-top: 20px;
+    width: 105px;
+    height: 126px;
+  }
+
+  .imgModulos3 {
+    width: 215px;
+    height: 137px;
+  }
+
+  .img_Alumnos1 {
+    width: 272px;
+    height: 184px;
+  }
+
+  .img_Alumnos2 {
+    width: 272px;
+    height: 184px;
+  }
+}
+/*Elementos del main index CELPHONE*/
 @media (max-width: 576px) {
   .h1_alumnos {
-    padding: 4px;
-    font-size: 26px;
+    font-size: 28px;
+    font-weight: 500;
   }
 
   div .col-12 {
     font-size: 15px;
   }
 
-  .altura_row_alumno1 {
-    height: 110vh;
-    padding-top: 10px;
-  }
-
-  .altura_row_alumno2 {
-    height: 90vh;
-    padding-top: 90px;
-  }
-
   .imgModulos1 {
-    width: 239px;
-    height: 137px;
+    width: 194px;
+    height: 123px;
   }
 
   .imgModulos2 {
     padding-top: 20px;
-    width: 162px;
-    height: 173px;
+    width: 90px;
+    height: 111px;
   }
 
   .imgModulos3 {
-    width: 239px;
-    height: 137px;
+    width: 194px;
+    height: 123px;
   }
 
   .img_Alumnos1 {
-    width: 210px;
-    height: 158px;
+    width: 245px;
+    height: 166px;
   }
 
   .img_Alumnos2 {
-    width: 237px;
-    height: 158px;
+    width: 245px;
+    height: 166px;
+  }
+
+  .col-12 {
+    font-size: 14px;
+  }
+}
+.h1_Contacto {
+  color: #52B6F9;
+  /*Aquí se usa una variable*/
+  text-align: center;
+  /*Aquí se usa mixin*/
+  font-weight: bold;
+  font-size: 40px;
+  animation: tituloContacto 6s;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@keyframes tituloContacto {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 .contactoMapa {
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   /*Aquí se usan variables*/
-  /*text-align: center;*/
   text-align: center;
   /*Aquí se usa un mixin*/
-}
-
-.h1_Contacto {
-  color: #52B6F9;
-  /*Aquí se usa una variable*/
-  /*text-align: center;*/
-  text-align: center;
-  /*Aquí se usa mixin*/
 }
 
 iframe {
   min-width: 90vw;
   min-height: 50vh;
+  animation-name: mapaMovimiento;
+  animation-duration: 5s;
 }
 
+@keyframes mapaMovimiento {
+  from {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .cajasContacto {
   color: #52B6F9;
   /*Aquí se usa una variable*/
-  font-size: 18px;
-  /*Aquí se usa un mixin*/
-  /*font-size: 18px;*/
   padding: 4px;
   background-image: radial-gradient(white 15%, #D6EAF8 85%);
   /*Aquí se usan variables*/
 }
 
+.card {
+  animation-name: cardMovimiento;
+  animation-duration: 3s;
+}
+
+@keyframes cardMovimiento {
+  from {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .card-title, .card-text {
   color: #0598FE;
-  /*text-align: center;*/
+  /*Abajo se usa un mixin*/
   text-align: center;
-  /*Aquí se usa un mixin*/
-  font-size: 14px;
-  /*Aquí se usa un mixin*/
-  /*font-size: 14px;*/
+  /*Abajo se usa un mixin*/
+  font-size: 15px;
   font-weight: 500;
 }
 
 .card-text {
-  /*Aquí se aplica extend*/
-  font-size: 13px;
-  /*Aquí se usa un mixin*/
-  /*font-size: 13px;*/
+  /*Abajo se usa un mixin*/
+  font-size: 14px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 577px) and (max-width: 768px) {
+  .h1_Contacto {
+    font-size: 36px;
+  }
+
   .card-title, .card-text {
     color: #0598FE;
+    /*Abajo se usa un mixin*/
     text-align: center;
-    /*Aquí se usa un mixin*/
-    font-size: 15px;
-    /*Aquí se usa un mixin*/
-    font-weight: 500;
+    /*Abajo se usa un mixin*/
+    font-size: 14px;
+    font-weight: 450;
   }
 
   .card-text {
-    /*Aquí se aplica extend*/
-    font-size: 14px;
+    /*Abajo se usa un mixin*/
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .h1_Contacto {
+    font-size: 32px;
+  }
+
+  .card-title, .card-text {
+    /*Abajo se usa un mixin*/
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .card-text {
+    font-size: 12px;
     /*Aquí se usa un mixin*/
-    /*font-size: 13px;*/
   }
 }
 /*Color extra:#1C94E5*/
-/*Elementos del footer Desktop (Aplica para todas las páginas del sitio)*/
+/*Elementos del footer DESKTOP (Aplica para todas las páginas del sitio)*/
 .imagen_footer {
-  max-width: 250px;
+  max-width: 230px;
 }
 
 .letras_footer {
-  padding-top: 15px;
+  padding-top: 10px;
   font-size: 18px;
   color: black;
 }
@@ -1018,14 +1355,43 @@ iframe {
   font-size: 15px;
 }
 
+.p-3 {
+  font-size: 14px;
+}
+
+/*Elementos del footer DESKTOP (Aplica para todas las páginas del sitio)*/
 @media (min-width: 577px) and (max-width: 768px) {
+  .letras_footer {
+    font-size: 16px;
+  }
+
   .imagen_footer {
-    max-width: 220px;
+    max-width: 200px;
+  }
+
+  .text-dark {
+    font-size: 14px;
+  }
+
+  .p-3 {
+    font-size: 13px;
   }
 }
 @media (max-width: 576px) {
+  .letras_footer {
+    font-size: 14px;
+  }
+
   .imagen_footer {
-    max-width: 190px;
+    max-width: 170px;
+  }
+
+  .text-dark {
+    font-size: 13px;
+  }
+
+  .p-3 {
+    font-size: 12px;
   }
 }
 
