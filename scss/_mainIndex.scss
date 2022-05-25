@@ -11,49 +11,63 @@ body {
     overflow-x: hidden;
 }
 
-/*Elementos del main index Desktop*/
+/*Elementos del main index DESKTOP*/
 .h1_index {
+    /*Abajo se usan variables*/
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    /*Aquí se usan variables*/
     margin: 0;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*Abajo se usa un mixin*/
     @include tamanioLetra(40px);
-    /*font-size: 40px;*/
     text-align: center;
-    color: $header_deg2; /*Aquí se usa una variable*/
+    /*Abajo se usa una variable*/
+    color: $header_deg2;
 }
 
 h1 {
-    font-weight: 650;
+    font-weight: bold;
+    animation: tituloHome 6s;
 }
 
-/*.colordiv{ 
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    text-align: center;
-}Falta modificar*/
+@keyframes tituloHome {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
 
-/*.altura {
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    text-align: center;
-    height: 125vh;
-}*/
+    30% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1.05);
+        opacity: 0.5;
+    }
+
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 .row-index {
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
 }
 
 .texto_mvv {
+    /*Abajo se usa una variable*/
     @include tamanioLetra(36px);
-    /*font-size: 36px;*/
     text-align: center;
+    /*Abajo se usa una variable*/
     color: $color_texto_mvv;
-    /*Aquí se usa una variable*/
     padding: 40px;
     animation-name: divUnoIndex;
     animation-duration: 3s;
     font-weight: 600;
-    b{
+
+    b {
         color: #1C94E5;
         font-weight: 650;
     }
@@ -64,7 +78,6 @@ h1 {
         transform: translateX(1000px);
         opacity: 0;
     }
-
     to {
         transform: translateX(0);
         opacity: 1;
@@ -77,10 +90,9 @@ h1 {
 }
 
 .cut {
+    /*Abajo se usa una variable*/
     @include tamanioLetra(24px);
-    /*font-size: 16px;*/
     color: $header_deg2;
-    /*Aquí se usa una variable*/
     padding: 0;
 }
 
@@ -91,12 +103,12 @@ h1 {
 .img_mvv:hover {
     cursor: pointer;
     max-width: 70px;
-}   
+}
 
 #mission {
     color: #1C94E5;
+    /*Abajo se usa una variable*/
     @include tamanioLetra(22px);
-    /*font-size: 18px;*/
 }
 
 #vission,
@@ -104,11 +116,9 @@ h1 {
     @extend #mission;
 }
 
-/*Aquí se aplica el extend*/
-
 .caja1_index {
+    /*Abajo se aplica el extend*/
     @include tamanioLetra(15px);
-    /*font-size: 16px;*/
     text-align: center;
     padding-right: 10px;
     padding-left: 10px;
@@ -116,29 +126,29 @@ h1 {
 
 .caja2_index,
 .caja3_index {
+    /*Abajo se aplica el extend*/
     @extend .caja1_index;
 }
 
-/*Aquí se aplica el extend*/
-
 .div_video_index {
-    height: 95vh;
+    min-height: 100vh;
     text-align: center;
+    /*Abajo se usan variables*/
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    /*Aquí se usan variables*/
 }
 
 .video_index {
-    min-width: 95vh;
-    min-height: 75vh;
+    max-width: 70vh;
+    min-height: 95vh;
 }
 
 .div-estrellas {
+    /*Abajo se usan variables*/
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    /*Aquí se usan variables*/
 }
 
 .img_estrellazul {
+    padding-top: 20px;
     max-width: 80px;
 }
 
@@ -149,18 +159,19 @@ h1 {
 
 .h3_index {
     padding-top: 10px;
+    /*Abajo se usa una variable*/
     @include tamanioLetra(40px);
-    /*font-size: 45px;*/
     color: red;
     font-weight: 700;
 }
 
 .h4_index {
+    /*Abajo se usa una variable*/
     @include tamanioLetra(22px);
     padding-bottom: 20px;
 }
 
-/*Elementos del main index Tablet*/
+/*Elementos del main index TABLET*/
 @media (min-width: 577px) and (max-width: 768px) {
     .h1_index {
         padding-top: 8px;
@@ -168,18 +179,9 @@ h1 {
         @include tamanioLetra(36px);
     }
 
-    h1 {
-        font-weight: 600;
-    }
-
     .texto_mvv {
         @include tamanioLetra(32px);
-        padding-top: 6px;
-        font-weight: 500;
-        b{
-            color: #1C94E5;
-            font-weight: 550;
-        }
+        padding-top: 15px;
     }
 
     .logo_index_mvv {
@@ -207,14 +209,14 @@ h1 {
     .div_video_index {
         max-height: 90vh;
         text-align: center;
+        /*Abajo se usan variables*/
         background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-        /*Aquí se usan variables*/
     }
 
     .h3_index {
         @include tamanioLetra(38px);
     }
-    
+
     .h4_index {
         @include tamanioLetra(20px);
         padding-bottom: 20px;
@@ -222,31 +224,23 @@ h1 {
 
 }
 
-/*Elementos del main index Celphone*/
+/*Elementos del main index CELPHONE*/
 @media (max-width: 576px) {
     .div-general {
+        /*Abajo se usan variables*/
         background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-        /*Aquí se usan variables*/
     }
 
     .h1_index {
         padding-top: 4px;
         padding-bottom: 4px;
+        /*Abajo se usa una variable*/
         @include tamanioLetra(32px);
-    }
-
-    h1 {
-        font-weight: 550;
     }
 
     .texto_mvv {
         @include tamanioLetra(28px);
         padding-top: 6px;
-        font-weight: 450;
-        b{
-            color: #1C94E5;
-            font-weight: 500;
-        }
     }
 
     .logo_index_mvv {
@@ -272,14 +266,14 @@ h1 {
     }
 
     .div_video_index {
-        max-height: 85vh;
+        max-height: 65vh;
         text-align: center;
+        /*Abajo se usan variables*/
         background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-        /*Aquí se usan variables*/
     }
 
     .video_index {
-        min-height: 65vh;
+        max-height: 60vh;
     }
 
     .img_estrellazul {

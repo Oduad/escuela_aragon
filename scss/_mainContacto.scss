@@ -6,75 +6,141 @@
     text-align: $cent;
 }
 
-.contactoMapa {
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    /*Aquí se usan variables*/
-    /*text-align: center;*/
-    @include centrado(center);
-    /*Aquí se usa un mixin*/
-}
-
 .h1_Contacto {
     color: $header_deg2;
     /*Aquí se usa una variable*/
-    /*text-align: center;*/
     @include centrado(center);
     /*Aquí se usa mixin*/
+    font-weight: bold;
+    font-size: 40px;
+    animation: tituloContacto 6s;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+@keyframes tituloContacto {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.contactoMapa {
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    /*Aquí se usan variables*/
+    @include centrado(center);
+    /*Aquí se usa un mixin*/
 }
 
 iframe {
     min-width: 90vw;
     min-height: 50vh;
+    animation-name: mapaMovimiento;
+    animation-duration: 5s;
+}
+
+@keyframes mapaMovimiento {
+    from {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .cajasContacto {
     color: $header_deg2;
     /*Aquí se usa una variable*/
-    @include tamanio(18px);
-    /*Aquí se usa un mixin*/
-    /*font-size: 18px;*/
     padding: 4px;
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
     /*Aquí se usan variables*/
 }
 
+.card {
+    animation-name: cardMovimiento;
+    animation-duration: 3s;
+}
+
+@keyframes cardMovimiento {
+    from {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .card-title {
     color: #0598FE;
-    /*text-align: center;*/
+    /*Abajo se usa un mixin*/
     @include centrado(center);
-    /*Aquí se usa un mixin*/
-    @include tamanio(14px);
-    /*Aquí se usa un mixin*/
-    /*font-size: 14px;*/
+    /*Abajo se usa un mixin*/
+    @include tamanio(15px);
     font-weight: 500;
 }
 
 .card-text {
     @extend .card-title;
-    /*Aquí se aplica extend*/
-    @include tamanio(13px);
-    /*Aquí se usa un mixin*/
-    /*font-size: 13px;*/
+    /*Abajo se usa un mixin*/
+    @include tamanio(14px);
 }
 
-
-@media(max-width: 576px) {
+@media(min-width: 577px) and (max-width: 768px) {
+    .h1_Contacto {
+        font-size: 36px;
+    }
 
     .card-title {
         color: #0598FE;
+        /*Abajo se usa un mixin*/
         @include centrado(center);
-        /*Aquí se usa un mixin*/
-        @include tamanio(15px);
-        /*Aquí se usa un mixin*/
-        font-weight: 500;
+        /*Abajo se usa un mixin*/
+        @include tamanio(14px);
+        font-weight: 450;
     }
 
     .card-text {
-        @extend .card-title;
-        /*Aquí se aplica extend*/
-        @include tamanio(14px);
+        /*Abajo se usa un mixin*/
+        @include tamanio(13px);
+    }
+}
+
+@media(max-width: 576px) {
+
+    .h1_Contacto {
+        font-size: 32px;
+    }
+
+    .card-title {
+        /*Abajo se usa un mixin*/
+        @include tamanio(13px);
+        font-weight: 400;
+    }
+
+    .card-text {
+        @include tamanio(12px);
         /*Aquí se usa un mixin*/
-        /*font-size: 13px;*/
     }
 
 }

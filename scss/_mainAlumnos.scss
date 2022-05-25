@@ -1,40 +1,62 @@
+/*Elementos del main index DESKTOP*/
 .color_cont_al {
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
     padding: 35px;
     /*Aquí se usan variables*/
 }
 
-.h1_alumnos {
+.container-h1Alumnos{
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+}
+
+.h1_alumnos {
     /*Aquí se usan variables*/
     margin: 0;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-size: 40px;
     text-align: center;
     color: $header_deg2;
     /*Aquí se usa una variable*/
+    font-weight: bold;
+    animation: tituloAlumnos 6s;
 }
 
-.col {
-    padding-top: 100px;
-    padding-bottom: 100px;
+@keyframes tituloAlumnos {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1.05);
+        opacity: 0.5;
+    }
+
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.col-12 {
+    font-size: 16px;
+}
+
+.galumyeg {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .color_col_alumno {
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
     padding-top: 40px;
-    padding-bottom: 100px;
-}
-
-.altura_row_alumno1 {
-    height: 50vh;
-    padding-top: 30px;
-}
-
-.altura_row_alumno2 {
-    height: 60vh;
-    padding-top: 90px;
+    padding-bottom: 40px;
 }
 
 .btn {
@@ -51,14 +73,38 @@
     font-weight: 500;
 }
 
+.bt2:hover {
+    background-color: cornflowerblue;
+    color: black;
+    height: 32px;
+    width: 90px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.imgModulos1 {
+    width: 239px;
+    height: 137px;
+}
+
+.imgModulos2 {
+    width: 130px;
+    height: 140px;
+}
+
+.imgModulos3 {
+    width: 239px;
+    height: 137px;
+}
+
 .img_Alumnos1 {
-    width: 300px;
-    height: 225px;
+    width: 302px;
+    height: 202px;
 }
 
 .img_Alumnos2 {
-    width: 338px;
-    height: 225px;
+    width: 302px;
+    height: 202px;
 }
 
 div {
@@ -67,10 +113,48 @@ div {
     }
 }
 
+/*Elementos del main index TABLET*/
+@media(min-width: 577px) and (max-width: 768px) {
+    .h1_alumnos {
+        font-size: 36px;
+        font-weight: 500;
+    }
+    .col-12 {
+        font-size: 15px;
+    }
+
+    .imgModulos1 {
+        width: 215px;
+        height: 137px;
+    }
+
+    .imgModulos2 {
+        padding-top: 20px;
+        width: 105px;
+        height: 126px;
+    }
+
+    .imgModulos3 {
+        width: 215px;
+        height: 137px;
+    }
+
+    .img_Alumnos1 {
+        width: 272px;
+        height: 184px;
+    }
+    
+    .img_Alumnos2 {
+        width: 272px;
+        height: 184px;
+    }
+}
+
+/*Elementos del main index CELPHONE*/
 @media(max-width: 576px) {
     .h1_alumnos {
-        padding: 4px;
-        font-size: 26px;
+        font-size: 28px;
+        font-weight: 500;
     }
 
     div {
@@ -79,40 +163,34 @@ div {
         }
     }
 
-    .altura_row_alumno1 {
-        height: 110vh;
-        padding-top: 10px;
-    }
-    
-    .altura_row_alumno2 {
-        height: 90vh;
-        padding-top: 90px;
-    }
-
     .imgModulos1 {
-        width: 239px;
-        height: 137px;
+        width: 194px;
+        height: 123px;
     }
 
     .imgModulos2 {
         padding-top: 20px;
-        width: 162px;
-        height: 173px;
+        width: 90px;
+        height: 111px;
     }
 
     .imgModulos3 {
-        width: 239px;
-        height: 137px;
+        width: 194px;
+        height: 123px;
     }
 
     .img_Alumnos1 {
-        width: 210px;
-        height: 158px;
+        width: 245px;
+        height: 166px;
     }
     
     .img_Alumnos2 {
-        width: 237px;
-        height: 158px;
+        width: 245px;
+        height: 166px;
+    }
+
+    .col-12 {
+        font-size: 14px;
     }
 
 }

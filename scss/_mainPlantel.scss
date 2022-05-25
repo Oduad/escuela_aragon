@@ -1,4 +1,4 @@
-/*Elementos del main plantel Desktop*/
+/*Elementos del main plantel DESKTOP*/
 @mixin tamanio($width, $height) {
     width: $width;
     height: $height;
@@ -9,178 +9,253 @@
 }
 
 .alturaPl {
+    /*Abajo se usan variables*/
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    /*Aquí se usan variables*/
-    height: 80vh;
     text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo_plantel {
-    @include tamanio(180px, 140px);
-    /*aquí se usa un mixin*/
-    /*width: 180px;
-    height: 140px;*/
+    /*Abajo se usa un mixin*/
+    @include tamanio(180px, 200px);
+    padding-top: 30px;
+    padding-bottom: 30px;
     animation-duration: 2s;
     cursor: pointer;
 }
 
-#letras_div1_pl {
-    @include tamanletras(35px);
-    /*Aquí se usa un mixin*/
-    /*font-size: 35px;*/
+.letras_div1_pl {
+    /*Abajo se usó un mixin*/
+    @include tamanletras(40px);
+    padding: 30px;
+    /*Abajo se usa una variable*/
     color: $header_deg2;
-    animation-name: lDiv1Of1;
-    animation-duration: 2s;
-    padding: 60px;
-}
-
-.color_col_pl {
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
-    /*Aquí se usan variables*/
-    height: 70vh;
-    text-align: center;
+    animation-name: lDiv1PL;
+    animation-duration: 6s;
+    font-weight: bold;
 }
 
 /*A continuación un par de líneas de tiempo para animación a las letras*/
 @keyframes lDiv1PL {
-    from {
+    0% {
+        transform: translateX(1000px);
         opacity: 0;
-        transform: translate(-600px);
     }
 
-    to {
+    30% {
+        transform: translateX(0);
         opacity: 1;
-        transform: translate(0);
     }
+
+    60% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.color_col_pl {
+    /*Abajo se usan variables*/
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.alt_plantel {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.alt_plantel2 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .titulos_plantel {
     justify-content: center;
-    @include tamanletras(40px);
-    /*Aquí se usa un mixin*/
-    /*font-size: 40px;*/
-    padding-top: 75px;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 30px;
+    /*Abajo se usa un mixin*/
+    @include tamanletras(38px);
+    padding: 25px;
+    /*Abajo se usa un mixin*/
     color: $color_textos;
-    /*Aquí se usa un mixin*/
+    text-align: center;
+}
+
+.titulos_plantel3 {
+    justify-content: center;
+    /*Abajo se usa un mixin*/
+    @include tamanletras(38px);
+    padding-top: 80px;
+    /*Abajo se usa una variable*/
+    color: $color_textos;
     text-align: center;
 }
 
 .texto_cajasPl {
     padding-right: 25px;
     padding-left: 25px;
+    /*Abajo se usa un mixin*/
     @include tamanletras(16px);
-    /*Aquí se usa un mixin*/
-    /*font-size: 16px;*/
     text-align: center;
     color: black;
 }
 
 .plantelImgAulas {
     @include tamanio(384px, 288px);
-    /*Aquí se usa un mixin*/
-    /*width: 290px;
-    height: 300px;*/
-    margin: 60px;
+    /*Arriba se usa un mixin*/
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .plantelImgMec {
     @include tamanio(384px, 288px);
-    /*Aquí se usa un mixin*/
-    /*width: 290px;
-    height: 300px;*/
-    margin: 60px;
+    /*Arriba se usa un mixin*/
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .plantelImgCrim {
     @include tamanio(216px, 288px);
-    /*Aquí se usa un mixin*/
-    /*width: 290px;
-    height: 300px;*/
-    margin: 60px;
+    /*Arriba se usa un mixin*/
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.modal-title {
-    text-align: center;
+@media(min-width: 577px) and (max-width: 768px) {
+    .logo_plantel {
+        @include tamanio(125px, 160px);
+    }
+
+    .letras_div1_pl {
+        @include tamanletras(36px);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .titulos_plantel {
+        @include tamanletras(34px);
+        padding-top: 15px;
+    }
+
+    .titulos_plantel3 {
+        @include tamanletras(34px);
+        padding-top: 15px;
+    }
+
+    .texto_cajasPl {
+        @include tamanletras(15px);
+    }
+
+    .alt_plantel {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .alt_plantel2 {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .plantelImgAulas {
+        @include tamanio(307px, 230px);
+        /*Arriba se usa un mixin*/
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .plantelImgMec {
+        @include tamanio(307px, 230px);
+        /*Arriba se usa un mixin*/
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .plantelImgCrim {
+        @include tamanio(173px, 230px);
+        /*Arriba se usa un mixin*/
+        margin: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 @media (max-width: 576px) {
     .alturaPl {
-        height: 50vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .logo_plantel {
-        height: 91px;
-        width: 119px;
-        margin: 0;
+        @include tamanio(100px, 140px);
     }
 
-    #letras_div1_pl {
-        @include tamanioLetra(27px);
-    }
-
-    .color_col_pl {
-        height: 60vh;
+    .letras_div1_pl {
+        @include tamanioLetra(30px);
     }
 
     .titulos_plantel {
-        @include tamanletras(24px);
-        /*Aquí se usa un mixin*/
-        /*font-size: 40px;*/
-        padding-top: 5px;
-        padding-right: 25px;
-        padding-left: 25px;
+        @include tamanletras(32px);
+
+    }
+
+    .titulos_plantel3 {
+        @include tamanletras(32px);
+        padding-top: 20px;
     }
 
     .btn {
         @include tamanletras(14px);
-    }
-
-    .plantelImgAulas {
-        @include tamanio(239px, 179px);
-        /*Aquí se usa un mixin*/
-        margin: 5px;
-    }
-
-    .plantelImgMec {
-        @include tamanio(175px, 175px);
-        /*Aquí se usa un mixin*/
-        margin: 5px;
+        padding-bottom: 5px
     }
 
     .texto_cajasPl {
-        padding-top: 25px;
-        padding-right: 25px;
-        padding-left: 25px;
-        @include tamanletras(15px);
-        /*Aquí se usa un mixin*/
+        @include tamanletras(14px);
+    }
+
+    .color_col_pl {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .alt_plantel {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .alt_plantel2 {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .plantelImgAulas {
         @include tamanio(230px, 173px);
-        /*Aquí se usa un mixin*/
-        /*width: 290px;
-    height: 300px;*/
-        margin: 30px;
-        text-align: center;
+        /*Arriba se usa un mixin*/
     }
 
     .plantelImgMec {
         @include tamanio(230px, 173px);
-        /*Aquí se usa un mixin*/
-        /*width: 290px;
-    height: 300px;*/
-        margin: 30px;
+        /*Arriba se usa un mixin*/
     }
 
     .plantelImgCrim {
         @include tamanio(130px, 173px);
-        /*Aquí se usa un mixin*/
-        /*width: 290px;
-    height: 300px;*/
-        margin: 30px;
+        /*Arriba se usa un mixin*/
     }
-
 }

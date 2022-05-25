@@ -1,11 +1,11 @@
-/*Elementos del footer Desktop (Aplica para todas las páginas del sitio)*/
+/*Elementos del footer DESKTOP (Aplica para todas las páginas del sitio)*/
 
 .imagen_footer {
-    max-width: 250px;
+    max-width: 230px;
 }
 
 .letras_footer {
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 18px;
     color: black;
 }
@@ -14,14 +14,47 @@
     font-size: 15px;
 }
 
+.p-3{
+    font-size: 14px;
+}
+
+/*Elementos del footer DESKTOP (Aplica para todas las páginas del sitio)*/
 @media (min-width: 577px) and (max-width: 768px) {
-    .imagen_footer {
-        max-width: 220px;
+    
+    .letras_footer {
+        font-size: 16px;
     }
+
+    .imagen_footer {
+        max-width: 200px;
+    }
+
+    .text-dark {
+        font-size: 14px;
+    }
+    
+    .p-3{
+        font-size: 13px;
+    }
+
 }
 
 @media (max-width: 576px) {
-    .imagen_footer {
-        max-width: 190px;
+
+    .letras_footer {
+        font-size: 14px;
     }
+
+    .imagen_footer {
+        max-width: 170px;
+    }
+
+    .text-dark {
+        font-size: 13px;
+    }
+    
+    .p-3{
+        font-size: 12px;
+    }
+
 }

@@ -1,3 +1,4 @@
+/*Elementos del main index DESKTOP*/
 @mixin tamanletras($fontsi) {
     font-size: $fontsi;
 }
@@ -8,19 +9,50 @@
     padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 40px;
-    @include tamanletras(16px);     /*Aquí se us mixin*/
-    /*font-size: 16px;*/
-    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%); /*Aquí se usan variables*/
+    /*Abajo se usa una variable*/
+    @include tamanletras(16px);
+    /*Abajo se usan variables*/
+    background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
 }
 
-.h1_beca{
+.h1_beca {
     text-align: center;
-    color: $header_deg2;            /*Aquí se usa una variable*/
-    font-size: 38px;
+    /*Abajo se usa una variable*/
+    color: $header_deg2;
+    font-size: 40px;
+    animation: tituloBeca 6s;
+    font-weight: bold;
 }
 
-.becaN{
+@keyframes tituloBeca {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    60% {
+        transform: scale(1.05);
+        opacity: 0.5;
+    }
+
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.becaN {
     font-weight: bold;
+    font-size: 16px;
+}
+
+.textoBeca {
+    font-size: 16px;
 }
 
 .textAreaBeca {
@@ -28,26 +60,60 @@
 }
 
 .botonBeca {
-    @include tamanletras(16px);     /*Aquí se usa mixin*/
-    /*font-size: 16px;*/
+    /*Aquí se usa mixin*/
+    @include tamanletras(16px);
 }
 
 .asterisk {
     color: red;
 }
 
-@media (max-width: 576px){
+/*Elementos del main index TABLET*/
+@media(min-width: 577px) and (max-width: 768px) {
 
     .formBeca {
         padding-top: 20px;
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 20px;
-        @include tamanletras(15px);     /*Aquí se us mixin*/
+        /*Abajo se usa mixin*/
+        @include tamanletras(15px);
     }
 
-    .h1_beca{
-        font-size: 20px;
+    .h1_beca {
+        font-size: 36px;
     }
 
+    .becaN {
+        font-size: 15px;
+    }
+
+    .textoBeca {
+        font-size: 15px;
+    }
+
+}
+
+/*Elementos del main index CELPHONE*/
+@media (max-width: 576px) {
+    .formBeca {
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        /*Abajo se usa un mixin*/
+        @include tamanletras(14px);
+    }
+
+    .h1_beca {
+        font-size: 32px;
+    }
+
+    .becaN {
+        font-size: 14px;
+    }
+
+    .textoBeca {
+        font-size: 14px;
+    }
 }
