@@ -14,6 +14,8 @@
     margin: 0;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
     font-size: 40px;
     text-align: center;
     color: $header_deg2;
@@ -117,7 +119,6 @@ div {
 @media(min-width: 577px) and (max-width: 768px) {
     .h1_alumnos {
         font-size: 36px;
-        font-weight: 500;
     }
     .col-12 {
         font-size: 15px;
@@ -154,7 +155,6 @@ div {
 @media(max-width: 576px) {
     .h1_alumnos {
         font-size: 28px;
-        font-weight: 500;
     }
 
     div {
