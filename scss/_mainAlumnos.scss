@@ -7,6 +7,9 @@
 
 .container-h1Alumnos{
     background-image: radial-gradient($color_deg1 15%, $color_deg2 85%);
+    padding-right: 40px;
+    padding-left: 40px;
+    font-weight: bold;
 }
 
 .h1_alumnos {
@@ -14,8 +17,6 @@
     margin: 0;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
     font-size: 40px;
     text-align: center;
     color: $header_deg2;
